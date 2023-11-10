@@ -2,12 +2,11 @@
 <html lang="en">
 
 
-<!-- Mirrored from demo.bosathemes.com/html/agence/index-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2023 09:00:32 GMT -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('') }}assets/img/fabicon-100x100.png">
+    <link rel="icon" type="image/png" href="{{ asset('') }}assets/images/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
     <!-- Fonts Awesome CSS -->
@@ -319,251 +318,6 @@
                     </div>
                 </div>
             </section>
-            <!-- home team section html -->
-            <section class="home-team-v2-section">
-                <div class="container">
-                    <div class="section-head-v2 col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
-                        <div class="title-divider-left">
-                            TEAM MEMBER
-                        </div>
-                        <h2 class="section-title">
-                            Optimistic Team Members
-                        </h2>
-                    </div>
-                    <div class="group-team-member">
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-3 p-3 team-member">
-                                <div class="team-item">
-                                    <figure class="team-img">
-                                        <img src="{{ asset('') }}assets/img/agency-img9.jpg" alt="">
-                                    </figure>
-                                    <div class="team-content">
-                                        <h4>
-                                            <a href="team-detail.html">Hary Warth</a>
-                                        </h4>
-                                        <span>Head Manager</span>
-                                    </div>
-                                    <div class="header-social social-links team-social-link">
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.facebook.com/">
-                                                    <i class="fab fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://twitter.com/?lang=en">
-                                                    <i class="fab fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.youtube.com/">
-                                                    <i class="fab fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 p-3 team-member">
-                                <div class="team-item">
-                                    <figure class="team-img">
-                                        <img src="{{ asset('') }}assets/img/agency-img11.jpg" alt="">
-                                    </figure>
-                                    <div class="team-content">
-                                        <h4>
-                                            <a href="team-detail.html">Sony Madison</a>
-                                        </h4>
-                                        <span>CEO, Director</span>
-                                    </div>
-                                    <div class="header-social social-links team-social-link">
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.facebook.com/">
-                                                    <i class="fab fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://twitter.com/?lang=en">
-                                                    <i class="fab fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.youtube.com/">
-                                                    <i class="fab fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 p-3 team-member">
-                                <div class="team-item">
-                                    <figure class="team-img">
-                                        <img src="{{ asset('') }}assets/img/agency-img10.jpg" alt="">
-                                    </figure>
-                                    <div class="team-content">
-                                        <h4>
-                                            <a href="team-detail.html">Johny Smith</a>
-                                        </h4>
-                                        <span>Supervisor</span>
-                                    </div>
-                                    <div class="header-social social-links team-social-link">
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.facebook.com/">
-                                                    <i class="fab fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://twitter.com/?lang=en">
-                                                    <i class="fab fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.youtube.com/">
-                                                    <i class="fab fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3 p-3 team-member">
-                                <div class="team-item">
-                                    <figure class="team-img">
-                                        <img src="{{ asset('') }}assets/img/agency-img12.jpg" alt="">
-                                    </figure>
-                                    <div class="team-content">
-                                        <h4>
-                                            <a href="team-detail.html">Jenny Hobb</a>
-                                        </h4>
-                                        <span>Branch Manager</span>
-                                    </div>
-                                    <div class="header-social social-links team-social-link">
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.facebook.com/">
-                                                    <i class="fab fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://twitter.com/?lang=en">
-                                                    <i class="fab fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.youtube.com/">
-                                                    <i class="fab fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- home portfolio section html -->
-            <section class="home-portfolio-v2-section">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 ">
-                            <div class="section-head-v2">
-                                <div class="title-divider-left">
-                                    OUR PORTFOLIO
-                                </div>
-                                <h2 class="section-title">
-                                    Our Completed Activities
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 ">
-                            <div class="section-disc">
-                                Commodo voluptatibus per quis, assumenda lorem! Nullam adipisicing praesent, impedit, ridiculus egestas dicta ratione mattis! Expedita repudiandae rutrum lacus eveniet.
-                            </div>
-                        </div>
-                        <div class="col-lg-2 d-flex justify-content-lg-end justify-content-center">
-                            <a href="portfolio.html" class="button-round-primary viewbtn">view more</a>
-                        </div>
-                    </div>
-                    <div class="gallery-inner-v2">
-                        <div class="gallery-container">
-                            <div class="single-gallery">
-                                <figure class="gallery-img">
-                                    <a href="{{ asset('') }}assets/img/agency-img27.jpg" data-fancybox="gallery">
-                                        <img src="{{ asset('') }}assets/img/agency-img027.jpg" alt="">
-                                    </a>
-                                    <div class="facility-wrapper">
-                                        <div class="facility-content">
-                                            <h4 class="facility-title">
-                                                <a href="portfolio-detail.html">Digital Marketing</a>
-                                            </h4>
-                                            <p class="facility-info">
-                                                Ullam aliquet mattis dignissim scelerisque anim exercitation officia, accusamus potenti ipsum, similique.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery">
-                                <figure class="gallery-img">
-                                    <a href="{{ asset('') }}assets/img/agency-img26.jpg" data-fancybox="gallery">
-                                        <img src="{{ asset('') }}assets/img/agency-img026.jpg" alt="">
-                                    </a>
-                                    <div class="facility-wrapper">
-                                        <div class="facility-content">
-                                            <h4 class="facility-title">
-                                                <a href="portfolio-detail.html">Web Development</a>
-                                            </h4>
-                                            <p class="facility-info">
-                                                Ullam aliquet mattis dignissim scelerisque anim exercitation officia, accusamus potenti ipsum, similique.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="single-gallery">
-                                <figure class="gallery-img">
-                                    <a href="{{ asset('') }}assets/img/agency-img25.jpg" data-fancybox="gallery">
-                                        <img src="{{ asset('') }}assets/img/agency-img025.jpg" alt="">
-                                    </a>
-                                    <div class="facility-wrapper">
-                                        <div class="facility-content">
-                                            <h4 class="facility-title">
-                                                <a href="portfolio-detail.html">Group Meeting</a>
-                                            </h4>
-                                            <p class="facility-info">
-                                                Ullam aliquet mattis dignissim scelerisque anim exercitation officia, accusamus potenti ipsum, similique.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- home partner section html -->
             <section class="home-partner-v2-section">
                 <div class="overlay"></div>
@@ -776,59 +530,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-meta-content">
-                        <div class="contact-detail-wrapper">
-                            <h4 class="contact-title">
-                                San Francisco Office :
-                            </h4>
-                            <p class="contact-info">
-                                Commodo voluptatibus per quis, ipsum assumenda lorem! Nullam adipisig praesent, impedit loream.
-                            </p>
-                            <div class="contact-meta-data">
-                                <ul>
-                                    <li>
-                                        <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
-                                        25th street, Francisco
-                                    </li>
-                                    <li>
-                                        <i aria-hidden="true" class="fas fa-phone-alt"></i>
-                                        +1 (552) 955-3695
-                                    </li>
-                                    <li>
-                                        <i aria-hidden="true" class="fas fa-envelope"></i>
-                                        <a href="https://demo.bosathemes.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e28b8c848da2868d8f838b8ccc818d8f">[email&#160;protected]</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="contact-detail-wrapper">
-                            <h4 class="contact-title">
-                                Melbourne Office :
-                            </h4>
-                            <p class="contact-info">
-                                Commodo voluptatibus per quis, ipsum assumenda lorem! Nullam adipisig praesent, impedit loream.
-                            </p>
-                            <div class="contact-meta-data">
-                                <ul>
-                                    <li>
-                                        <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
-                                        13th Rock street, Lisbon
-                                    </li>
-                                    <li>
-                                        <i aria-hidden="true" class="fas fa-phone-alt"></i>
-                                        +1 (552) 955-3695
-                                    </li>
-                                    <li>
-                                        <i aria-hidden="true" class="fas fa-envelope"></i>
-                                        <a href="https://demo.bosathemes.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="85ebe4e8e0c5e1eae8e4ecebabe6eae8">[email&#160;protected]</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="map-section">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317838.95217734354!2d-0.27362819527326965!3d51.51107287614788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7c7eb9be3%3A0x3918653583725b56!2sRiverside%20Building%2C%20County%20Hall%2C%20Westminster%20Bridge%20Rd%2C%20London%20SE1%207JA%2C%20UK!5e0!3m2!1sen!2snp!4v1632135241093!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
@@ -838,10 +539,10 @@
             <div class="top-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 pe-lg-4">
+                        <div class="col-lg-4 col-md-6 pe-lg-4">
                             <aside class="widget widget_text img-textwidget">
                                 <div class="footer-logo">
-                                    <a href="index-2.html"><img src="{{ asset('') }}assets/img/white-logo.png" alt="logo"></a>
+                                    <a href="index-2.html"><img src="{{ asset('') }}assets/images/logo.png" alt="logo"></a>
                                 </div>
                                 <div class="textwidget widget-text">
                                     Auctor blandit dolorem primis eius odit soluta molestie? Malesuada elementum aut doloremque labo.
@@ -872,45 +573,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <aside class="widget">
-                                <h3 class="widget-title">Useful Links</h3>
-                                <ul>
-                                    <li>
-                                        <a href="about-us.html">About us</a>
-                                    </li>
-                                    <li>
-                                        <a href="career-2.html">Careers</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-blog.html">News & Articles</a>
-                                    </li>
-                                    <li>
-                                        <a href="legal-notice.html">Legal Notice</a>
-                                    </li>
-                                </ul>
+                                <div class="map-section">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317838.95217734354!2d-0.27362819527326965!3d51.51107287614788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7c7eb9be3%3A0x3918653583725b56!2sRiverside%20Building%2C%20County%20Hall%2C%20Westminster%20Bridge%20Rd%2C%20London%20SE1%207JA%2C%20UK!5e0!3m2!1sen!2snp!4v1632135241093!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
                             </aside>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <aside class="widget">
-                                <h3 class="widget-title">Support</h3>
-                                <ul>
-                                    <li>
-                                        <a href="faq.html">Help Center</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="cart.html">Payment Center</a>
-                                    </li>
-                                    <li>
-                                        <a href="legal-notice.html">Parent Community</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <aside class="widget widget_text">
                                 <h3 class="widget-title">Contact Information</h3>
                                 <p>Feel free to contact and reach us !</p>
@@ -941,7 +611,7 @@
             </div>
             <div class="bottom-footer">
                 <div class="container">
-                    <div class="copy-right text-center">Copyright &copy; 2023 Agence. All rights reserved.</div>
+                    <div class="copy-right text-center">Copyright &copy; 2023 StarLabSys. All rights reserved.</div>
                 </div>
             </div>
         </footer>
@@ -983,5 +653,4 @@
 (function(){var js = "window['__CF$cv$params']={r:'821c23fdae09238c',t:'MTY5OTI2MTE2OC40NjcwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/b/scripts/jsd/61b90d1d/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
 
 
-<!-- Mirrored from demo.bosathemes.com/html/agence/index-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2023 09:00:38 GMT -->
 </html>
