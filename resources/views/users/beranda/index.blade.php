@@ -9,29 +9,12 @@
                 <div class="col-lg-6">
                     <div class="banner-content">
                         <div class="section-head-v2-white">
-                            <div class="title-divider-left">
-                                CORPORATE AGENCY
-                            </div>
                             <h2 class="section-title">
-                                Best Agency In The Market !
+                                Untan Press
                             </h2>
                             <p class="section-paragraph">
                                 Senectus dictum doloribus senectus laboriosam deserunt molestias rhoncus nonummy excepteur rem nostrud, ullamcorper, blanditiis, lobortis pede donec quidem aliquip tortor.
                             </p>
-                        </div>
-                        <div class="banner-author-box">
-                            <div class="author-content">
-                                <figure class="author-fig">
-                                    <img src="{{ asset('') }}assets/img/agency-img18.jpg" alt="">
-                                </figure>
-                                <div class="author-detail">
-                                    <h5 class="author-name">George Smith</h5>
-                                    <span class="author-dec">CEO, Director</span>
-                                </div>
-                            </div>
-                            <div class="banner-button">
-                                <a href="about-us.html" class="button-round-primary">LEARN MORE</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,12 +33,12 @@
                 <div class="banner-contact-wrapper">
                     <div class="banner-contact-inner">
                         <h6 class="banner-contact-title">
-                            FOR FURTHER INQUIRIES CALL :
+                            Hubungi kami untuk penerbitan buku, jurnal, dan lain-lain :
                         </h6>
                         <h3 class="banner-contact-number">(+984) 256 897 225</h3>
-                        <span class="banner-contact-info">
-                            Senectus dictum doloribus senectus laboriosam deserunt molestias rhoncus nonummy excepteur remr.
-                        </span>
+{{--                        <span class="banner-contact-info">--}}
+{{--                            Senectus dictum doloribus senectus laboriosam deserunt molestias rhoncus nonummy excepteur remr.--}}
+{{--                        </span>--}}
                     </div>
                 </div>
             </div>
@@ -71,62 +54,63 @@
                 <div class="about-detail">
                     <div class="section-head-v2">
                         <div class="title-divider-left">
-                            ABOUT US
+                            Tentang Kami
                         </div>
                         <h2 class="banner-title section-title">
                             How We Became Best Among Others ?
                         </h2>
                         <p class="section-paragraph">
-                            Lobortis ipsam potenti necessitatibus integer unde quisque, condimentum doloribus cupiditate. Class soluta asperiores recusandae dolorum, orci! Elementum fermentum montes lacinia. Conubia quos laoreet aperiam orci..
+                            <b>University Press</b> di Universitas Tanjungpura, melalui UNTAN Press, menjadi tulang punggung dalam publikasi dan distribusi ilmu pengetahuan. Dengan fokus pada e-book, buku konvensional, dan sitasi, UNTAN Press tidak hanya mendukung industri buku tetapi juga membentuk komunitas ilmuwan yang inovatif di universitas.
                         </p>
                     </div>
-                    <div class="about-list">
-                        <ul>
-                            <li>
-                                <i aria-hidden="true" class="icon icon-checked1"></i>
-                                Praesentium volupta tum dolores ipsum.
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="icon icon-checked1"></i>
-                                Cillum nullam rem volutpat dolor init earum.
-                            </li>
-                            <li>
-                                <i aria-hidden="true" class="icon icon-checked1"></i>
-                                Odio doloribus lacus quaerat color assum.
-                            </li>
-                        </ul>
-                    </div>
+{{--                    <div class="about-list">--}}
+{{--                        <ul>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Pengajuan ISBN--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Desain Cover--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Layout--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Proofreading--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Editing Mekanis--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Editing Subtantif--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
+{{--                                Paket Penerbitan--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                     <div class="about-count-up">
                         <div class="counter-inner">
                             <div class="counter-content">
-                                <h6 class="count-title">EXPERT TEAM</h6>
+                                <h6 class="count-title">Bukun Berhasil Terbit</h6>
                                 <div class="counter-no">
                                     <span class="counter">3</span>K+
-                                </div>
-                                <div class="Completed">
-                                    Complete Projects
                                 </div>
                             </div>
                         </div>
                         <div class="counter-inner">
                             <div class="counter-content">
-                                <h6 class="count-title">BRANCHES</h6>
+                                <h6 class="count-title">Total Buku</h6>
                                 <div class="counter-no">
                                     <span class="counter">15</span>+
                                 </div>
-                                <div class="Completed">
-                                    Company Sector
-                                </div>
                             </div>
-                        </div>
-                        <div class="counter-inner">
-                            <figure class="count-img figure-border-round">
-                                <div class="video-button">
-                                    <a id="video-container" data-video-id="IUN664s7N-c">
-                                        <i class="fas fa-play"></i>
-                                    </a>
-                                </div>
-                            </figure>
                         </div>
                     </div>
                 </div>
@@ -155,7 +139,7 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Website Develop Planning</a>
+                        <a href="single-page.html">Pengajuan ISBN</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
@@ -174,7 +158,7 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Graphic & Sketch Designing</a>
+                        <a href="single-page.html">Desain Cover</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
@@ -193,7 +177,7 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">SEO & Content Writing</a>
+                        <a href="single-page.html">Layout</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
@@ -212,7 +196,64 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Digital Marketing Startegy</a>
+                        <a href="single-page.html">Proofreading</a>
+                    </h5>
+                    <p class="service-paragraph">
+                        Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
+                    </p>
+                    <a href="single-page.html" class="service-btn">READ MORE
+                        <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="service-type">
+                    <div class="service-fig-number">
+                        <figure class="service-icon">
+                            <i aria-hidden="true" class="icon icon-api_setup"></i>
+                        </figure>
+                        <span class="service-number">
+                            05.
+                        </span>
+                    </div>
+                    <h5 class="service-title">
+                        <a href="single-page.html">Editing Mekanis</a>
+                    </h5>
+                    <p class="service-paragraph">
+                        Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
+                    </p>
+                    <a href="single-page.html" class="service-btn">READ MORE
+                        <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="service-type">
+                    <div class="service-fig-number">
+                        <figure class="service-icon">
+                            <i aria-hidden="true" class="icon icon-api_setup"></i>
+                        </figure>
+                        <span class="service-number">
+                            06.
+                        </span>
+                    </div>
+                    <h5 class="service-title">
+                        <a href="single-page.html">Editing Subtantif</a>
+                    </h5>
+                    <p class="service-paragraph">
+                        Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
+                    </p>
+                    <a href="single-page.html" class="service-btn">READ MORE
+                        <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="service-type">
+                    <div class="service-fig-number">
+                        <figure class="service-icon">
+                            <i aria-hidden="true" class="icon icon-api_setup"></i>
+                        </figure>
+                        <span class="service-number">
+                            07.
+                        </span>
+                    </div>
+                    <h5 class="service-title">
+                        <a href="single-page.html">Paket Penerbitan</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
@@ -222,9 +263,6 @@
                     </a>
                 </div>
             </div>
-            <div class="home-v2-service-btn text-center">
-                <a href="service.html" class="button-round-primary">MORE SERVICES</a>
-            </div>
         </div>
     </section>
     <!-- home process section start -->
@@ -232,11 +270,8 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="section-head-v2-white col-lg-6 offset-lg-3 col-md-8 offset-md-2 text-center">
-                <div class="title-divider-left">
-                    OUR PROCESS
-                </div>
                 <h2 class="section-title">
-                    We Follow These Flowless Process !
+                    Informasi Penerbitan
                 </h2>
             </div>
         </div>
@@ -248,7 +283,7 @@
                         <h3 class="number-phase">01</h3>
                         <div class="phase-info">
                             <h5 class="phase-title">
-                                Research Project
+                                Jenis Naskah
                             </h5>
                             <p class="phase-desc">
                                 Turpis wisi pede tempus assumenda pede quis ultricies dicta ipsa
@@ -259,7 +294,7 @@
                         <h3 class="number-phase">02</h3>
                         <div class="phase-info">
                             <h5 class="phase-title">
-                                Evaluate Plans
+                                Prosedur Penerbitan
                             </h5>
                             <p class="phase-desc">
                                 Turpis wisi pede tempus assumenda pede quis ultricies dicta ipsa
@@ -270,11 +305,293 @@
                         <h3 class="number-phase">03</h3>
                         <div class="phase-info">
                             <h5 class="phase-title">
-                                Best Results
+                                Persyaratn Penerbitan
                             </h5>
                             <p class="phase-desc">
                                 Turpis wisi pede tempus assumenda pede quis ultricies dicta ipsa
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home partner section html -->
+    <section class="inner-banner-wrap">
+        <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
+            <div class="container">
+                <div class="inner-banner-content">
+                    <h1 class="inner-title">Buku Baru</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-process-v2-section" style="margin-top: -200px">
+        <div class="product-outer-wrap product-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 right-sidebar">
+                        <div class="product-notices-wrapper">
+                            <a href=""><p class="product-result-count">Showing all</p></a>
+                        </div>
+                        <div class="product-item-wrapper">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img35.jpg" alt="">
+                                            </a>
+                                            <span class="onsale">Sale</span>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Lenevo laptop</h4>
+                                            <div class="product-price">
+                                                <del>$225.00</del>
+                                                <ins>$210.50</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img34.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Mackbook</h4>
+                                            <div class="product-price">
+                                                <ins>$180.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img33.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>office Chair</h4>
+                                            <div class="product-price">
+                                                <del>$55.55</del>
+                                                <ins>$50.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img32.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Office Table</h4>
+                                            <div class="product-price">
+                                                <ins>$325.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home partner section html -->
+    <section class="inner-banner-wrap">
+        <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
+            <div class="container">
+                <div class="inner-banner-content">
+                    <h1 class="inner-title">Sedang Diskon</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-process-v2-section" style="margin-top: -200px">
+        <div class="product-outer-wrap product-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 right-sidebar">
+                        <div class="product-notices-wrapper">
+                            <a href=""><p class="product-result-count">Showing all</p></a>
+                        </div>
+                        <div class="product-item-wrapper">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img35.jpg" alt="">
+                                            </a>
+                                            <span class="onsale">Sale</span>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Lenevo laptop</h4>
+                                            <div class="product-price">
+                                                <del>$225.00</del>
+                                                <ins>$210.50</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img34.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Mackbook</h4>
+                                            <div class="product-price">
+                                                <ins>$180.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img33.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>office Chair</h4>
+                                            <div class="product-price">
+                                                <del>$55.55</del>
+                                                <ins>$50.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img32.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Office Table</h4>
+                                            <div class="product-price">
+                                                <ins>$325.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home partner section html -->
+    <section class="inner-banner-wrap">
+        <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
+            <div class="container">
+                <div class="inner-banner-content">
+                    <h1 class="inner-title">Best Seller</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-process-v2-section" style="margin-top: -200px">
+        <div class="product-outer-wrap product-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 right-sidebar">
+                        <div class="product-notices-wrapper">
+                            <a href=""><p class="product-result-count">Showing all</p></a>
+                        </div>
+                        <div class="product-item-wrapper">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img35.jpg" alt="">
+                                            </a>
+                                            <span class="onsale">Sale</span>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Lenevo laptop</h4>
+                                            <div class="product-price">
+                                                <del>$225.00</del>
+                                                <ins>$210.50</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img34.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Mackbook</h4>
+                                            <div class="product-price">
+                                                <ins>$180.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img33.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>office Chair</h4>
+                                            <div class="product-price">
+                                                <del>$55.55</del>
+                                                <ins>$50.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="product-item text-center">
+                                        <figure class="product-image">
+                                            <a href="single-product.html">
+                                                <img src="assets/img/agency-img32.jpg" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="product-content">
+                                            <h4>Office Table</h4>
+                                            <div class="product-price">
+                                                <ins>$325.00</ins>
+                                            </div>
+                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

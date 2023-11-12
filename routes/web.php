@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\BerandaController;
+use App\Http\Controllers\User\PengajuanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BerandaController::class, 'index']);
+Route::get('/sejarah', [BerandaController::class, 'sejarah']);
+Route::get('/tim-kami', [BerandaController::class, 'timKami']);
+Route::get('/pengajuan-isbn', [PengajuanController::class, 'isbn']);
+Route::get('/pengajuan-desain-cover', [PengajuanController::class, 'desainCover']);
+Route::get('/pengajuan-layout', [PengajuanController::class, 'layout']);
+Route::get('/pengajuan-proofreading', [PengajuanController::class, 'proofreading']);
+Route::get('/pengajuan-editing-mekanis', [PengajuanController::class, 'editingMekanis']);
+Route::get('/pengajuan-editing-subtantif', [PengajuanController::class, 'editingSubtantif']);
+Route::get('/pengajuan-paket-penerbitan', [PengajuanController::class, 'paketPenerbitan']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
