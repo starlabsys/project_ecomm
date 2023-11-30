@@ -55,13 +55,13 @@
                             <a href="#">Informasi Penerbitan</a>
                             <ul>
                                 <li class="">
-                                    <a href="#">Jenis Naskah</a>
+                                    <a href="{{url('informasi-penerbitan-jenis-naskah')}}">Jenis Naskah</a>
                                 </li>
                                 <li>
-                                    <a href="single-blog.html">Prosedur Penerbitan</a>
+                                    <a href="{{url('informasi-penerbitan-prosedur-penerbitan')}}">Prosedur Penerbitan</a>
                                 </li>
                                 <li>
-                                    <a href="single-blog.html">Persyaratan ISBN</a>
+                                    <a href="{{url('informasi-penerbitan-persyaratan-ISBN')}}">Persyaratan ISBN</a>
                                 </li>
                             </ul>
                         </li>
@@ -69,45 +69,45 @@
                             <a href="#">Etalase</a>
                             <ul>
                                 <li>
-                                    <a href="single-blog.html">Best Seller</a>
+                                    <a href="{{url('etalase-best-seller')}}">Best Seller</a>
                                 </li>
                                 <li>
-                                    <a href="single-blog.html">Sedang Diskon</a>
+                                    <a href="{{url('etalase-sedang-diskon')}}">Sedang Diskon</a>
                                 </li>
                                 <li>
-                                    <a href="single-blog.html">Buku Baru</a>
+                                    <a href="{{url('etalase-buku-baru')}}">Buku Baru</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="contact.html">Segera Terbit</a>
+                            <a href="{{url('segera-terbit')}}">Segera Terbit</a>
                         </li>
                         <li>
-                            <a href="contact.html">Kontak Kami</a>
+                            <a href="{{url('kontak-kami')}}">Kontak Kami</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Jaminan Mutu</a>
                             <ul>
                                 <li>
-                                    <a href="single-post.html">Sistem Dokumentasi</a>
+                                    <a href="{{url('jaminan-mutu-sistem-dokumentasi')}}">Sistem Dokumentasi</a>
                                 </li>
                                 <li>
-                                    <a href="single-blog.html">Audit</a>
+                                    <a href="{{url('jaminan-mutu-audit')}}">Audit</a>
                                 </li>
                                 <li>
-                                    <a href="single-blog.html">Tinjauan Manajemen</a>
+                                    <a href="{{url('jaminan-mutu-tinjauan-manajemen')}}">Tinjauan Manajemen</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="contact.html">Download</a>
+                            <a href="{{url('download')}}">Download</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="side-nav d-flex justify-content-between align-items-center">
                 <div class="header-btn d-inline-block">
-                    <a href="contact.html" class="button-round-primary">Login</a>
+                    <a href="{{url('login')}}" class="button-round-primary">Login</a>
                 </div>
             </div>
         </div>

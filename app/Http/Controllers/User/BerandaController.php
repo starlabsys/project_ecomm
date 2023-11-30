@@ -13,11 +13,15 @@ class BerandaController extends Controller
         return view('users.beranda.index');
     }
 
-    public function sejarah(){
-        return view('users.profile.sejarah');
+    public function segeraTerbit(){
+        return view('users.segera_terbit.segera_terbit');
     }
 
-    public function timKami(){
-        return view('users.profile.tim_kami');
+    public function kontakKami(){
+        return view('users.kontak_kami.kontak_kami');
+    }
+
+    public function download(){
+        return view('users.download.download');
     }
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class InformasiPenerbitan extends Controller
+class InformasiPenerbitanController extends Controller
 {
     public function jenisNaskah(){
         return view('users.informasi_penerbitan.jenis_naskah');
