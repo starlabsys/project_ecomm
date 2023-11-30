@@ -12,16 +12,16 @@
                 <nav id="navigation" class="navigation d-none d-lg-inline-block">
                     <ul>
                         <li>
-                            <a href="/">Beranda</a>
+                            <a href="{{url('/')}}">Beranda</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Profil</a>
                             <ul>
                                 <li>
-                                    <a href="/sejarah">Sejarah</a>
+                                    <a href="{{url('sejarah')}}">Sejarah</a>
                                 </li>
                                 <li>
-                                    <a href="/tim-kami">Tim Kami</a>
+                                    <a href="{{url('tim-kami')}}">Tim Kami</a>
                                 </li>
                             </ul>
                         </li>
@@ -29,25 +29,25 @@
                             <a href="#">Layanan</a>
                             <ul>
                                 <li>
-                                    <a href="pengajuan-isbn">Pengajuan ISBN</a>
+                                    <a href="{{url('pengajuan-isbn')}}">Pengajuan ISBN</a>
                                 </li>
                                 <li>
-                                    <a href="pengajuan-desain-cover">Desain Cover</a>
+                                    <a href="{{url('pengajuan-desain-cover')}}">Desain Cover</a>
                                 </li>
                                 <li>
-                                    <a href="pengajuan-layout">Layout</a>
+                                    <a href="{{url('pengajuan-layout')}}">Layout</a>
                                 </li>
                                 <li>
-                                    <a href="pengajuan-proofreading">Proofrading</a>
+                                    <a href="{{url('pengajuan-proofreading')}}">Proofrading</a>
                                 </li>
                                 <li>
-                                    <a href="pengajuan-editing-mekanis">Editing Mekanis</a>
+                                    <a href="{{url('pengajuan-editing-mekanis')}}">Editing Mekanis</a>
                                 </li>
                                 <li>
-                                    <a href="pengajuan-editing-subtantif">Editing Substantif</a>
+                                    <a href="{{url('pengajuan-editing-subtantif')}}">Editing Substantif</a>
                                 </li>
                                 <li>
-                                    <a href="pengajuan-paket-penerbitan">Paket Penerbitan</a>
+                                    <a href="{{url('pengajuan-paket-penerbitan')}}}">Paket Penerbitan</a>
                                 </li>
                             </ul>
                         </li>
