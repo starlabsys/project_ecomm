@@ -46,8 +46,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <aside class="widget widget_text">
-                        <h3 class="widget-title">Contact Information</h3>
-                        <p>Feel free to contact and reach us !</p>
+                        <h3 class="widget-title">Kontak Kami</h3>
                         <div class="textwidget widget-text">
                             <ul>
                                 <li>
