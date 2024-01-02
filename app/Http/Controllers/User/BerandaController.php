@@ -12,4 +12,16 @@ class BerandaController extends Controller
     public function index(){
         return view('users.beranda.index');
     }
+
+    public function segeraTerbit(){
+        return view('users.segera_terbit.segera_terbit');
+    }
+
+    public function kontakKami(){
+        return view('users.kontak_kami.kontak_kami');
+    }
+
+    public function download(){
+        return view('users.download.download');
+    }
 }
