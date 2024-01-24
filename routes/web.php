@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\InformasiPenerbitanController as AdminInformasiPenerbitanController;
+use App\Http\Controllers\Admin\LayananController;
+use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\User\AuthController;
 use App\Http\Controllers\User\BerandaController;
 use App\Http\Controllers\User\EtalaseController;
@@ -69,6 +72,42 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::group([
+    'prefix' => 'admin',
+    'middleware' => ['auth', 'role:Admin'],
+], function(){
+    
+    Route::group([
+        'prefix' => 'profil',
+        'controller' => ProfilController::class,
+
+    ],function(){
+        Route::get("/", 'index');
+        Route::post('/anggota', 'storeAnggota');
+
+        Route::post('/sejarah', 'storeSejarah');
+    });
+
+    Route::group([
+        'prefix' => 'informasi-penerbitan',
+        'controller' => AdminInformasiPenerbitanController::class,
+    ], function(){
+        Route::get('/', 'index');
+
+        Route::post('/naskah', 'storeNaskah');
+        Route::post('/persyaratan-isbn', 'storePersyaratanIsbn');
+    });
+
+    Route::group([
+        'prefix' => 'layanan',
+        'controller' => LayananController::class
+    ],function(){
+        Route::get('/', 'index');
+
+        Route::post('/pengajuan-isbn', 'storePengajuanIsbn');
+    });
 });
 
 require __DIR__.'/auth.php';
