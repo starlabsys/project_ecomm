@@ -10,6 +10,15 @@ class BerandaController extends Controller
     //
 
     public function index(){
+        //todo: phone number
+        //todo: about us
+        //todo: total buku terbit
+        //todo: total semua buku
+        //todo: total semua buku
+        //todo: 4 buah list buku baru
+        //todo: 4 buah list buku diskon
+        //todo: 4 buah list buku best seller
+        //todo: kontak informasi fb, yt, ig
         return view('users.beranda.index');
     }
 
