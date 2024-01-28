@@ -26,7 +26,7 @@
                      @csrf
                      <div class="col-md-12 mt-3">
                          <label for="" class="control-label">Konten Persyaratan ISBN</label>
-                         <textarea name="konten"  id="editor" cols="30" rows="10">{{ $persyaratanIsbn->konten }}</textarea>
+                         <textarea name="konten"  id="editor" cols="30" rows="10">{{ @$persyaratanIsbn->konten }}</textarea>
                      </div>
 
                      <div class="col-md-12 mt-3">
