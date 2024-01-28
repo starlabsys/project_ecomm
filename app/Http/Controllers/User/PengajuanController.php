@@ -3,16 +3,18 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\PengajuanIsbn;
 use Illuminate\Http\Request;
 
 class PengajuanController extends Controller
 {
     public function isbn(){
-        //todo: text pengenalan
-        //todo: syarat
-        //todo: harga
-        //todo: waktu pengerjaan
-        //todo: text footer
+
+        $resp = PengajuanIsbn::get();
+
+        if ($resp->count() == 0) {
+            return view('users.empty');
+        }
 
         return view('users.layanan.isbn');
     }
