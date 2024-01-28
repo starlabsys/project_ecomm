@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\InformasiPenerbitanController as AdminInformasiPenerbitanController;
 use App\Http\Controllers\Admin\LayananController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\User\AuthController;
 use App\Http\Controllers\User\BerandaController;
@@ -107,6 +108,14 @@ Route::group([
         Route::get('/', 'index');
 
         Route::post('/pengajuan-isbn', 'storePengajuanIsbn');
+    });
+
+    Route::group([
+        'prefix' => 'product',
+        'controller' => ProductController::class
+    ],function(){
+        Route::get('/', 'index');
+        Route::post('/', 'store');
     });
 });
 
