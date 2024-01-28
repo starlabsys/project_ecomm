@@ -36,9 +36,6 @@
                             Hubungi kami untuk penerbitan buku, jurnal, dan lain-lain :
                         </h6>
                         <h3 class="banner-contact-number">(+984) 256 897 225</h3>
-{{--                        <span class="banner-contact-info">--}}
-{{--                            Senectus dictum doloribus senectus laboriosam deserunt molestias rhoncus nonummy excepteur remr.--}}
-{{--                        </span>--}}
                     </div>
                 </div>
             </div>
@@ -63,38 +60,6 @@
                             <b>University Press</b> di Universitas Tanjungpura, melalui UNTAN Press, menjadi tulang punggung dalam publikasi dan distribusi ilmu pengetahuan. Dengan fokus pada e-book, buku konvensional, dan sitasi, UNTAN Press tidak hanya mendukung industri buku tetapi juga membentuk komunitas ilmuwan yang inovatif di universitas.
                         </p>
                     </div>
-{{--                    <div class="about-list">--}}
-{{--                        <ul>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Pengajuan ISBN--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Desain Cover--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Layout--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Proofreading--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Editing Mekanis--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Editing Subtantif--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Paket Penerbitan--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
                     <div class="about-count-up">
                         <div class="counter-inner">
                             <div class="counter-content">
@@ -656,82 +621,6 @@
             </div>
         </div>
     </section>
-    <!-- home-blog-v2-section -->
-    <section class="home-blog-v2-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-head-v2 text-center">
-                        <div class="title-divider-left">
-                            OUR BLOGS
-                        </div>
-                        <h2 class="section-title">
-                            Checkout Our Latest Blog & Insights
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-inner">
-                <div class="row d-flex justify-content-center justify-content-xl-start">
-                    <div class="col-sm-6 col-lg-4">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <a href="single-blog.html">
-                                    <img src="{{ asset('') }}assets/img/agency-img16.jpg" alt="">
-                                </a>
-                                <span class="cat-meta"></span>
-                            </figure>
-                            <div class="entry-content">
-                                <h4>
-                                    <a href="single-blog.html">Maxime rhoncus aliquet sint eu accusantium illum.</a>
-                                </h4>
-                                <p>
-                                    Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?
-                                </p>
-                                <a href="single-blog.html" class="blog-link"> READ MORE</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 ">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <a href="single-blog.html">
-                                    <img src="{{ asset('') }}assets/img/agency-img15.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="entry-content">
-                                <h4>
-                                    <a href="single-blog.html">Cursus egestas tristique viverra cum harum, ulla.</a>
-                                </h4>
-                                <p>
-                                    Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?
-                                </p>
-                                <a href="single-blog.html" class="blog-link"> READ MORE</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 ">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <a href="single-post.html">
-                                    <img src="{{ asset('') }}assets/img/agency-img14.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="entry-content">
-                                <h4>
-                                    <a href="single-blog.html">Felis platea eget justo, esse cumque dolorum.</a>
-                                </h4>
-                                <p>
-                                    Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?
-                                </p>
-                                <a href="single-blog.html" class="blog-link"> READ MORE</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- home contact v2 section -->
     <section class="home-contact-v2-section">
         <div class="overlay"></div>
@@ -778,12 +667,12 @@
                                                 <i class="fab fa-facebook"></i>
                                             </a>
                                         </li>
+{{--                                        <li>--}}
+{{--                                            <a href="https://twitter.com/?lang=en">--}}
+{{--                                                <i class="fab fa-twitter"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
                                         <li>
-                                            <a href="https://twitter.com/?lang=en">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    <li>
                                             <a href="https://www.youtube.com/">
                                                 <i class="fab fa-youtube"></i>
                                             </a>
@@ -793,16 +682,16 @@
                                                 <i class="fab fa-instagram"></i>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="https://www.pinterest.com/">
-                                                <i class="fab fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/">
-                                                <i class="fab fa-linkedin"></i>
-                                            </a>
-                                        </li>
+{{--                                        <li>--}}
+{{--                                            <a href="https://www.pinterest.com/">--}}
+{{--                                                <i class="fab fa-pinterest"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <a href="https://www.linkedin.com/">--}}
+{{--                                                <i class="fab fa-linkedin"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
                                     </ul>
                                 </div>
                             </div>
