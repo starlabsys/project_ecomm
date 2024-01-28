@@ -20,16 +20,16 @@
 8. Main Header
 9. Home front section
 	* Home banner section
-	* Home Service section  
-	* Home About section  
-	* Home Charity section  
-	* Home Contact section  
-	* Home Event section  
-	* Home Gallery section  
-	* Home clinet section  
-	* Home Testimonial section  
-	* Home Blog section  
-	* Home Callback section  
+	* Home Service section
+	* Home About section
+	* Home Charity section
+	* Home Contact section
+	* Home Event section
+	* Home Gallery section
+	* Home clinet section
+	* Home Testimonial section
+	* Home Blog section
+	* Home Callback section
 10. main Footer
 11. pages
 	* About Pages
@@ -48,7 +48,7 @@
 	* Shop Pages
 		*Product Right
 		*Product Detail
-		*Product Cart 
+		*Product Cart
 		*Product Checkout
 	* Donate Page
 12. compatibility
@@ -1277,7 +1277,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Default 
+>>> Default
 ----------------------------------------------------------------*/
 .semi-bold {
   font-weight: 600;
@@ -1946,7 +1946,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Main Header 
+>>> Main Header
 ----------------------------------------------------------------*/
 .site-header {
   background-color: rgba(17, 17, 17, 0.2);
@@ -2850,10 +2850,10 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home Main section  
+>>> Home Main section
 ----------------------------------------------------------------*/
 /*--------------------------------------------------------------
->>> Home banner section  
+>>> Home banner section
 ----------------------------------------------------------------*/
 .home-banner {
   -webkit-background-size: cover;
@@ -2999,7 +2999,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home service section  
+>>> Home service section
 ----------------------------------------------------------------*/
 .service-section {
   margin-bottom: 120px;
@@ -3289,7 +3289,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home about section  
+>>> Home about section
 ----------------------------------------------------------------*/
 .about-section {
   padding-bottom: 120px;
@@ -3543,7 +3543,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home progress section  
+>>> Home progress section
 ----------------------------------------------------------------*/
 .progress-section {
   margin-bottom: -60px;
@@ -3594,7 +3594,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home contact section  
+>>> Home contact section
 ----------------------------------------------------------------*/
 .contact-section {
   background-position: center center;
@@ -3835,7 +3835,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home gallery section  
+>>> Home gallery section
 ----------------------------------------------------------------*/
 .gallery-section {
   padding-bottom: 120px;
@@ -3986,7 +3986,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home client section  
+>>> Home client section
 ----------------------------------------------------------------*/
 .client-section {
   padding-top: 50px;
@@ -4003,7 +4003,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home fact section  
+>>> Home fact section
 ----------------------------------------------------------------*/
 .fact-section {
   background-color: #292929;
@@ -4164,7 +4164,7 @@ input[type=submit]:focus {
   font-size: 15px;
 }
 /*--------------------------------------------------------------
->>> Home testimonial section  
+>>> Home testimonial section
 ----------------------------------------------------------------*/
 .testimonial-section {
   padding-top: 120px;
@@ -4331,7 +4331,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home blog section  
+>>> Home blog section
 ----------------------------------------------------------------*/
 .blog-section {
   margin-top: 120px;
@@ -4469,7 +4469,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home callback section  
+>>> Home callback section
 ----------------------------------------------------------------*/
 .callback-section {
   background-repeat: no-repeat;
@@ -4493,7 +4493,7 @@ input[type=submit]:focus {
     padding-top: 10px;
   }
 } /*--------------------------------------------------------------
->>> Home team section  
+>>> Home team section
 ----------------------------------------------------------------*/
 .team-section {
   padding: 120px 0 120px 0;
@@ -4584,7 +4584,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> subscribe team section  
+>>> subscribe team section
 ----------------------------------------------------------------*/
 .subscribe-section {
   padding: 80px 0;
@@ -4674,10 +4674,10 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home-v2 Main section  
+>>> Home-v2 Main section
 ----------------------------------------------------------------*/
 /*--------------------------------------------------------------
->>> Home banner section  
+>>> Home banner section
 ----------------------------------------------------------------*/
 .home-banner-v2 {
   padding-top: 96px;
@@ -4869,7 +4869,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home about section  
+>>> Home about section
 ----------------------------------------------------------------*/
 .home-about-v2-section {
   padding: 50px 0 100px;
@@ -5044,7 +5044,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home service section  
+>>> Home service section
 ----------------------------------------------------------------*/
 .home-service-v2-section {
   padding: 100px 0;
@@ -5150,7 +5150,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home process section  
+>>> Home process section
 ----------------------------------------------------------------*/
 .home-process-v2-section {
   padding: 100px 0;
@@ -5314,7 +5314,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home team section  
+>>> Home team section
 ----------------------------------------------------------------*/
 .home-team-v2-section {
   padding: 100px 0;
@@ -5389,7 +5389,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home portfolio section  
+>>> Home portfolio section
 ----------------------------------------------------------------*/
 .home-portfolio-v2-section {
   padding: 100px 0 0;
@@ -5527,7 +5527,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home partner section  
+>>> Home partner section
 ----------------------------------------------------------------*/
 .home-partner-v2-section {
   margin-top: -200px;
@@ -5634,7 +5634,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home blog section  
+>>> Home blog section
 ----------------------------------------------------------------*/
 .home-blog-v2-section {
   margin: 100px 0;
@@ -5729,7 +5729,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Home contact section  
+>>> Home contact section
 ----------------------------------------------------------------*/
 .home-contact-v2-section {
   padding: 100px 0;
@@ -5938,7 +5938,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Main Footer  
+>>> Main Footer
 ----------------------------------------------------------------*/
 .site-footer {
   background-color: #292929;
@@ -6066,7 +6066,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Inner Banner  
+>>> Inner Banner
 ----------------------------------------------------------------*/
 .inner-baner-container {
   background-size: cover;
@@ -6147,7 +6147,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> portfolio-detail  
+>>> portfolio-detail
 ----------------------------------------------------------------*/
 .portfolio-detail-section {
   padding-bottom: 120px;
@@ -6227,7 +6227,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> About Page  
+>>> About Page
 ----------------------------------------------------------------*/
 .about-page-section {
   margin-top: 120px;
@@ -6408,7 +6408,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> service Page  
+>>> service Page
 ----------------------------------------------------------------*/
 .diff-services-section {
   margin-bottom: 0;
@@ -6603,7 +6603,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Career Page  
+>>> Career Page
 ----------------------------------------------------------------*/
 .blog-archive {
   padding-top: 110px;
@@ -6714,7 +6714,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Career Page  
+>>> Career Page
 ----------------------------------------------------------------*/
 .inner-banner-wrap .entry-meta {
   border-top: 1px solid #a7a7a7;
@@ -7199,7 +7199,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Career Page  
+>>> Career Page
 ----------------------------------------------------------------*/
 .team-detail-section {
   padding-top: 120px;
@@ -7371,7 +7371,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Blog archive Page  
+>>> Blog archive Page
 ----------------------------------------------------------------*/
 .carrer-page-section {
   padding: 120px 0 0;
@@ -7601,7 +7601,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Career detail Page  
+>>> Career detail Page
 ----------------------------------------------------------------*/
 .career-detail-section {
   margin-bottom: 120px;
@@ -7820,14 +7820,14 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Gallery Page  
+>>> Gallery Page
 ----------------------------------------------------------------*/
 .gallery-page-section {
   padding-top: 0;
 }
 
 /*--------------------------------------------------------------
->>> Team Page  
+>>> Team Page
 ----------------------------------------------------------------*/
 .team-section .group-member {
   margin-bottom: 20px;
@@ -7837,7 +7837,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Testimonial Page  
+>>> Testimonial Page
 ----------------------------------------------------------------*/
 .testimonial-section-page {
   padding: 65px 0 70px;
@@ -7876,7 +7876,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> FAQ Page  
+>>> FAQ Page
 ----------------------------------------------------------------*/
 .faq-page-section {
   margin-top: 120px;
@@ -8006,7 +8006,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Search Page  
+>>> Search Page
 ----------------------------------------------------------------*/
 .search-section {
   padding-top: 110px;
@@ -8159,7 +8159,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> 404 Page  
+>>> 404 Page
 ----------------------------------------------------------------*/
 .inner-banner-wrap .error404-container {
   padding: 200px 0 100px;
@@ -8256,7 +8256,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Comming soon Page  
+>>> Comming soon Page
 ----------------------------------------------------------------*/
 .comming-soon-section {
   background-size: cover;
@@ -8458,7 +8458,7 @@ input[type=submit]:focus {
 }
 
 /*--------------------------------------------------------------
->>> Contact Page  
+>>> Contact Page
 ----------------------------------------------------------------*/
 .contact-page-section iframe {
   display: block;
@@ -8792,7 +8792,7 @@ input[type=submit]:focus {
   border-radius: 30px;
 }
 .product-item .onsale:after {
-  content: "!";
+  content: "%";
 }
 .product-item .rate-wrap {
   padding: 20px 20px 0;
@@ -10235,7 +10235,7 @@ product checkout css
 }
 
 /*--------------------------------------------------------------
->>> Compatibility  
+>>> Compatibility
 ----------------------------------------------------------------*/
 .widget {
   margin-bottom: 30px;
