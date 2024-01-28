@@ -89,7 +89,7 @@
                         </div>
                         <div class="col-md-4 mt-2">
                             <label for="" class="control-label">Diskon</label>
-                            <input type="number" class="form-control" name="harga" placeholder="50" required>
+                            <input type="number" class="form-control" name="diskon" placeholder="50">
                             <small class="text-danger">*kosongkan jika tidak ada diskon/persentase</small>
                         </div>
                         <div class="col-md-12 mt-2">
