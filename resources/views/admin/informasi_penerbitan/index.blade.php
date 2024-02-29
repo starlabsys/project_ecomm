@@ -107,9 +107,9 @@
        <div class="row layout-top-spacing">
           <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
              <div class="d-flex justify-content-between m-2">
-                 <h4><b>List Data Informasi Penerbitan</b></h4>
-                 <button type="button" class="btn btn-primary mr-2 _effect--ripple waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                     + Informasi Penerbitan
+                 <h4><b>List Data Prosedur Penerbitan</b></h4>
+                 <button type="button" class="btn btn-primary mr-2 _effect--ripple waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#prosedurpenerbitan">
+                     + Prosedur Penerbitan
                  </button>
              </div>
              <div class="widget-content widget-content-area br-8">
@@ -118,19 +118,17 @@
                          <thead>
                              <tr>
                                  <th width="5%">No</th>    
-                                 <th width="50%">Judul Informasi Penerbitan</th>    
-                                 <th width="60">Konten Informasi Penerbitan</th> 
-                                 <th>Foto Naskah</th>   
+                                 <th width="40%">Judul Prosedur Penerbitan</th>    
+                                 <th width="40%">Isi Prosedur Penerbitan</th> 
                                  <th>Action</th>    
                              </tr>    
                          </thead>
                          <tbody>
-                            @foreach ($jenisNaskah as $q => $item)
+                            @foreach ($prosedur as $q => $item)
                                 <tr>
                                     <td>{{ $q+1 }}</td>
-                                    <td>{{ $item->nama_naskah }}</td>
-                                    <td>{{ $item->konten_naskah }}</td>
-                                    <td>{{ $item->foto_naskah }}</td>
+                                    <td>{{ $item->judul_prosedur }}</td>
+                                    <td>{{ $item->isi_prosedur }}</td>
                                     <td>
                                         <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
                                             @csrf
@@ -171,7 +169,7 @@
      <div class="modal-dialog" role="document">
          <div class="modal-content">
              <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Tambah Team Baru</h5>
+                 <h5 class="modal-title" id="exampleModalLabel">Tambah Naskah Baru</h5>
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                    <svg> ... </svg>
                  </button>
@@ -192,6 +190,48 @@
                              <label for="" class="control-label">Isi Konten Naskah</label>
                              <textarea name="konten_naskah" class="form-control" id="" cols="30" rows="5" maxlength="300"></textarea>
                              <small class="text-danger">max 300 length characters</small>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="modal-footer">
+                     <button class="btn btn btn-light-dark" data-bs-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                     <button type="submit" class="btn btn-primary">Save</button>
+                 </div>
+             </form>
+         </div>
+     </div>
+ </div>
+
+ <div class="modal fade" id="prosedurpenerbitan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Tambah Prosedur Penerbitan</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                   <svg> ... </svg>
+                 </button>
+             </div>
+             <form action="{{ url('admin/informasi-penerbitan/prosedur') }}" method="POST" enctype="multipart/form-data">
+                 @csrf
+                 <div class="modal-body">
+                     <div class="row">
+                         <div class="col-md-12 mt-2">
+                             <label for="" class="control-label">Tipe Prosedur</label>
+                             <select name="type" class="form-control" id="">
+                                <option value="" selected disabled> == PILIH == </option>
+                                <option value="Buku"> Buku </option>
+                                <option value="Prosiding"> Prosiding </option>
+                             </select>
+                             {{-- <input type="text" class="form-control" name="nama_naskah" placeholder="Nama Naskah" required> --}}
+                         </div>
+                         <div class="col-md-12 mt-2">
+                             <label for="" class="control-label">Judul Prosedur </label>
+                             <input type="text" class="form-control" name="judul_prosedur" placeholder="Tahap 1 : ISIAN MERUPAKAN TITLE LANGKAH"  required>
+                         </div>
+                         <div class="col-md-12 mt-2">
+                             <label for="" class="control-label">Isi Prosedur</label>
+                             <textarea name="isi_prosedur" class="form-control" id="" cols="30" rows="5" maxlength="500"></textarea>
+                             <small class="text-danger">max 500 length characters</small>
                          </div>
                      </div>
                  </div>

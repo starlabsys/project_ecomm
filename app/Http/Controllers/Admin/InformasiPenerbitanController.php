@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Naskah;
 use App\Models\PersyaratanIsbn;
+use App\Models\ProsedurPenerbitan;
 use App\Services\InformasiPenerbitanService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -24,10 +25,12 @@ class InformasiPenerbitanController extends Controller
 
         $jenisNaskah = $this->informasiPenerbitanService->dataJenisNaskah();
         $persyaratanIsbn = $this->informasiPenerbitanService->dataPersyaratanIsbn();
+        $prosedur = ProsedurPenerbitan::get();
 
         return view('admin.informasi_penerbitan.index',[
             'jenisNaskah' => $jenisNaskah,
-            'persyaratanIsbn' => $persyaratanIsbn
+            'persyaratanIsbn' => $persyaratanIsbn,
+            'prosedur' => $prosedur,
         ]);
     }
 
@@ -120,5 +123,25 @@ class InformasiPenerbitanController extends Controller
         ]);
 
         return back()->withSuccess("Berhasil Menambahkan Informasi Persyaratan ISBN");
+    }
+
+    public function storeProsedur(Request $request){
+        $validator = Validator::make($request->all(), [
+            'type' => 'required|in:Buku,Prosiding',
+            'judul_prosedur' => 'required',
+            'isi_prosedur' => 'required',
+        ]);
+
+        if($validator->fails()){
+            return back()->withErrors($validator->errors()->first());
+        }
+
+        ProsedurPenerbitan::create([
+            'type' => $request->type,
+            'judul_prosedur' => $request->judul_prosedur,
+            'isi_prosedur' => $request->isi_prosedur,
+        ]);
+
+        return back()->withSuccess('Berhasil Menambahkan Prosedur Penerbitan Baru');
     }
 }

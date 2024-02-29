@@ -256,6 +256,7 @@
                             <tr>
                                 <th width="5%">No</th>
                                 <th width="">Paket Penerbitan</th>
+                                <th width="">Foto</th>
                                 <th width="">Harga</th>
                                 <th width="10%">Action</th>
                             </tr>    
@@ -265,6 +266,9 @@
                                 <tr>
                                     <td>{{ $key+1 }}</td>
                                     <td>{{ $item->nama_paket }}</td>
+                                    <td>
+                                        <img src="{{ asset('paket_penerbitan/'.$item->gambar) }}" class="img-thumbnail" alt="">
+                                    </td>
                                     <td>Rp. {{ number_format($item->harga) }}</td>
                                     <td class="d-flex">
                                         <button class="btn btn-warning btn-sm mr-2 ml-2">Warning</button>
@@ -324,6 +328,10 @@
                         <div class="col-md-12 mt-2">
                             <label for="" class="control-label">Harga</label>
                             <input type="number" class="form-control" name="harga" required>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <label for="" class="control-label">Gambar</label>
+                            <input type="file" class="form-control" name="gambar" required>
                         </div>
                         <hr class="text-black">
                         <span id="dynamic_field">

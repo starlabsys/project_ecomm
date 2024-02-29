@@ -99,6 +99,7 @@ Route::group([
 
         Route::post('/naskah', 'storeNaskah');
         Route::post('/persyaratan-isbn', 'storePersyaratanIsbn');
+        Route::post('/prosedur', 'storeProsedur');
     });
 
     Route::group([

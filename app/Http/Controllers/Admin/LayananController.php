@@ -74,16 +74,25 @@ class LayananController extends Controller
         $validator = Validator::make($request->all(), [
             'nama_paket' => 'required',
             'harga' => 'required|numeric',
-            'deskripsi.*' => 'required' 
+            'gambar' => 'required|image|mimes:png,jpg',
+            'deskripsi.*' => 'required'
         ]);
 
         if($validator->fails()){
             return back()->withError($validator->errors()->first());
         }
 
+        if ($request->file('gambar')) {
+            $file = $request->file('gambar');
+            $nama_file = time() . "_" . $file->getClientOriginalName();
+            $tujuan_upload = 'paket_penerbitan';
+            $file->move($tujuan_upload, $nama_file);
+        }
+
         paketPenerbitan::create([
             'nama_paket' =>$request->nama_paket,
             'harga' => $request->harga,
+            'gambar' => $nama_file,
             'deskripsi' => json_encode($request->deskripsi)
         ]);
 

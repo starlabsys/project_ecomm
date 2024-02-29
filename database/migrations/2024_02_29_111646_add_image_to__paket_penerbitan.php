@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('prosedur_penerbitans', function (Blueprint $table) {
-            $table->id();
-            $table->string('type');
-            $table->string('judul_prosedur');
-            $table->string('isi_prosedur');
-            $table->timestamps();
+        Schema::table('paket_penerbitans', function (Blueprint $table) {
+            //
+            $table->text('gambar')->default('image.png');
         });
     }
 
@@ -29,6 +26,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prosedur_penerbitans');
+        Schema::table('paket_penerbitans', function (Blueprint $table) {
+            //
+        });
     }
 };
