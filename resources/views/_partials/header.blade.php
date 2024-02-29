@@ -47,7 +47,7 @@
                                     <a href="{{url('pengajuan-editing-subtantif')}}">Editing Substantif</a>
                                 </li>
                                 <li>
-                                    <a href="{{url('pengajuan-paket-penerbitan')}}}">Paket Penerbitan</a>
+                                    <a href="{{url('pengajuan-paket-penerbitan')}}">Paket Penerbitan</a>
                                 </li>
                             </ul>
                         </li>

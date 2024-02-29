@@ -3,20 +3,26 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Models\PengajuanIsbn;
+use App\Models\Layanan;
 use Illuminate\Http\Request;
 
 class PengajuanController extends Controller
 {
     public function isbn(){
 
-        $resp = PengajuanIsbn::get();
-
+        $resp = Layanan::get();
+//
         if ($resp->count() == 0) {
-            return view('users.empty');
+            return view('users.layanan.isbn');
         }
 
-        return view('users.layanan.isbn');
+        $angka = $resp[0]->harga;
+        $formatMataUang = 'Rp ' . number_format($angka, 0, ',', '.');
+
+        return view('users.layanan.isbn', [
+            'isbn' => $resp[0],
+            'formatMataUang' => $formatMataUang
+        ]);
     }
 
     public function desainCover(){
