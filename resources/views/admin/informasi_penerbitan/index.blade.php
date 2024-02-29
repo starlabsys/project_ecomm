@@ -230,7 +230,7 @@
                          </div>
                          <div class="col-md-12 mt-2">
                              <label for="" class="control-label">Isi Prosedur</label>
-                             <textarea name="isi_prosedur" class="form-control" id="" cols="30" rows="5" maxlength="500"></textarea>
+                             <textarea name="isi_prosedur" class="form-control editor2" id="" cols="30" rows="5" maxlength="500"></textarea>
                              <small class="text-danger">max 500 length characters</small>
                          </div>
                      </div>

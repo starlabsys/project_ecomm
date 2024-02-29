@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\InformasiPenerbitanController as AdminInformasiPenerbitanController;
+use App\Http\Controllers\Admin\KontakController;
 use App\Http\Controllers\Admin\LayananController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\ProfilController;
@@ -117,6 +118,14 @@ Route::group([
         'prefix' => 'product',
         'controller' => ProductController::class
     ],function(){
+        Route::get('/', 'index');
+        Route::post('/', 'store');
+    });
+
+    Route::group([
+        'prefix' => 'kontak',
+        'controller' => KontakController::class
+    ], function(){
         Route::get('/', 'index');
         Route::post('/', 'store');
     });
