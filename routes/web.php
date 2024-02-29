@@ -108,6 +108,8 @@ Route::group([
         Route::get('/', 'index');
 
         Route::post('/pengajuan-isbn', 'storePengajuanIsbn');
+
+        Route::post('paket-penerbitan', 'storePaket');
     });
 
     Route::group([
