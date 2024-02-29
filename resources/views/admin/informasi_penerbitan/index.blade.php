@@ -67,11 +67,7 @@
                                  <th>Foto Naskah</th>   
                                  <th>Action</th>    
                              </tr>    
-                 <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button class="btn btn-danger btn-sm">Hapus</button>
-                                        </form>         </thead>
+                 </thead>
                          <tbody>
                             @foreach ($jenisNaskah as $q => $item)
                                 <tr>
