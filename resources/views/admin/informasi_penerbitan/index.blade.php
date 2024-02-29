@@ -67,7 +67,11 @@
                                  <th>Foto Naskah</th>   
                                  <th>Action</th>    
                              </tr>    
-                         </thead>
+                 <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm">Hapus</button>
+                                        </form>         </thead>
                          <tbody>
                             @foreach ($jenisNaskah as $q => $item)
                                 <tr>
@@ -76,11 +80,7 @@
                                     <td>{{ $item->konten_naskah }}</td>
                                     <td>{{ $item->foto_naskah }}</td>
                                     <td>
-                                        <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button class="btn btn-danger btn-sm">Hapus</button>
-                                        </form>
+                                       
                                     </td>
                                 </tr>
                             @endforeach

@@ -12,7 +12,12 @@ class LayananController extends Controller
     //
 
     public function index(){
-        return view('admin.layanan.index');
+        $pengajuanisbn = Layanan::where('tipe', 'pengajuan_isbn')->first();
+
+
+        return view('admin.layanan.index',[
+            'pengajuanisbn' => $pengajuanisbn
+        ]);
     }
 
     public function storePengajuanIsbn(Request $request){
@@ -40,6 +45,8 @@ class LayananController extends Controller
             'harga' => $request->harga,
             'tipe' => 'pengajuan_isbn'
         ]);
+
+        
         return back()->withSuccess('Berhasil Menambahkan Konten Pengajuan ISBN');
     }
 }
