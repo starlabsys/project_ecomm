@@ -51,4 +51,16 @@ class ProductController extends Controller
 
         return back()->withSuccess("Berhasil Menambahkan Produk");
     }
+
+    public function delete($id){
+        $check = Product::where('id', $id)->first();
+
+        if(!$check){
+            return back()->withErrors("Data Tidak Ditemukan");
+        }
+
+        $check->delete();
+
+        return back()->withSuccess("Data Berhasil Dihapus");
+    }
 }

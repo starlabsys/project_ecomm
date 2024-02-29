@@ -98,4 +98,21 @@ class LayananController extends Controller
 
         return back()->withSuccess("Success Tambah Paket");
     }
+
+    // public function editPaket(Request $request){
+
+    // }
+
+    public function deletePaket($id){
+        $check = paketPenerbitan::where('id', $id)->first();
+
+        if(!$check){
+            return back()->withErrors("Data Tidak Ditemukan");
+        }
+
+        $check->delete();
+        
+        return back()->withErrors("Data Berhasil Dihapus");
+
+    }
 }

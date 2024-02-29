@@ -48,8 +48,8 @@
                                     <td>{{ $item->diskon }} %</td>
                                     <td>{{ $item->status }}</td>
                                     <td class="d-flex">
-                                        <button class="btn btn-warning btn-sm mr-2 ml-2">Warning</button>
-                                        <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
+                                        {{-- <button class="btn btn-warning btn-sm mr-2 ml-2">Warning</button> --}}
+                                        <form action="{{ url('admin/product/'.$item->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-danger btn-sm">Hapus</button>

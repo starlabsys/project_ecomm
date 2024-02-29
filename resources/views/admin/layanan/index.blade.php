@@ -258,7 +258,7 @@
                                 <th width="">Paket Penerbitan</th>
                                 <th width="">Foto</th>
                                 <th width="">Harga</th>
-                                <th width="10%">Action</th>
+                                <th width="15%">Action</th>
                             </tr>    
                         </thead>
                         <tbody>
@@ -270,9 +270,9 @@
                                         <img src="{{ asset('paket_penerbitan/'.$item->gambar) }}" class="img-thumbnail" alt="">
                                     </td>
                                     <td>Rp. {{ number_format($item->harga) }}</td>
-                                    <td class="d-flex">
-                                        <button class="btn btn-warning btn-sm mr-2 ml-2">Warning</button>
-                                        <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
+                                    <td class="d-flex justify-content-evenly">
+                                        {{-- <button class="btn btn-warning btn-sm mr-2 ml-2">Warning</button> --}}
+                                        <form action="{{ url('admin/paket-penerbitan/'.$item->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-danger btn-sm">Hapus</button>

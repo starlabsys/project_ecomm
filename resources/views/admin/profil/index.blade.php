@@ -98,14 +98,68 @@
                                     <td>{{ $item->facebook_anggota }}</td>    
                                     <td>{{ $item->twitter_anggota }}</td>    
                                     <td>{{ $item->youtube_anggota }}</td>    
-                                    <td>
+                                    <td class="d-flex justify-content-evenly">
+                                        <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
                                         <form action="{{ url('admin/profil/anggota/'.$item->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-danger btn-sm">Hapus</button>
                                         </form>    
                                     </td>    
-                                </tr>    
+                                </tr>  
+                                <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit Team Baru</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                  <svg> ... </svg>
+                                                </button>
+                                            </div>
+                                            <form action="{{ url('admin/profil/anggota/edit') }}" method="POST" enctype="multipart/form-data">
+                                                @csrf
+                                                <input type="hidden" name="id" value="{{ $item->id }}">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6 mt-2">
+                                                            <label for="" class="control-label">Nama Anggota</label>
+                                                            <input type="text" class="form-control" name="nama_anggota" value="{{ $item->nama_anggota }}" placeholder="Nama Anggota" required>
+                                                        </div>
+                                                        <div class="col-md-6 mt-2">
+                                                            <label for="" class="control-label">Jabatan Anggota</label>
+                                                            <input type="text" class="form-control" name="jabatan_anggota" value="{{ $item->jabatan_anggota }}" placeholder="Jabatan Anggota" required>
+                                                        </div>
+                                                        <div class="col-md-6 mt-2">
+                                                            <label for="" class="control-label">Facebook Url</label>
+                                                            <input type="text" class="form-control" name="facebook_anggota" value="{{ $item->facebook_anggota }}" placeholder="https://url.com/anggota">
+                                                        </div>
+                                                        <div class="col-md-6 mt-2">
+                                                            <label for="" class="control-label">Twitter Url</label>
+                                                            <input type="text" class="form-control" name="twitter_anggota" value="{{ $item->twitter_anggota }}" placeholder="https://url.com/anggota">
+                                                        </div>
+                                                        <div class="col-md-6 mt-2">
+                                                            <label for="" class="control-label">Youtube Url</label>
+                                                            <input type="text" class="form-control" name="youtube_anggota" value="{{ $item->youtube_anggota }}" placeholder="https://url.com/anggota">
+                                                        </div>
+                                                        <div class="col-md-6 mt-2">
+                                                            <label for="" class="control-label">Instagram Url</label>
+                                                            <input type="text" class="form-control" name="instagram_anggota" value="{{ $item->instagram_anggota }}" placeholder="https://url.com/anggota">
+                                                        </div>
+                                                        <div class="col-md-12 mt-2">
+                                                            <label for="" class="control-label">Foto Anggota</label>
+                                                            <input type="file" class="form-control" name="foto_anggota">
+                                                            <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn btn-light-dark" data-bs-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>  
                             @endforeach
                         </tbody> 
                     </table>
@@ -167,4 +221,5 @@
         </div>
     </div>
 </div>
+
 @endsection

@@ -76,7 +76,11 @@
                                     <td>{{ $item->konten_naskah }}</td>
                                     <td>{{ $item->foto_naskah }}</td>
                                     <td>
-                                       
+                                        <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm">Hapus</button>
+                                        </form>  
                                     </td>
                                 </tr>
                             @endforeach
@@ -117,7 +121,8 @@
                      <table class="table table-bordered Datatable">
                          <thead>
                              <tr>
-                                 <th width="5%">No</th>    
+                                 <th width="5%">No</th>  
+                                 <th width="10%">Tipe</th>  
                                  <th width="40%">Judul Prosedur Penerbitan</th>    
                                  <th width="40%">Isi Prosedur Penerbitan</th> 
                                  <th>Action</th>    
@@ -127,10 +132,11 @@
                             @foreach ($prosedur as $q => $item)
                                 <tr>
                                     <td>{{ $q+1 }}</td>
+                                    <td>{{ $item->type }}</td>
                                     <td>{{ $item->judul_prosedur }}</td>
                                     <td>{{ $item->isi_prosedur }}</td>
                                     <td>
-                                        <form action="{{ url('admin/informasi-penerbitan/naskah/'.$item->id) }}" method="POST">
+                                        <form action="{{ url('admin/informasi-penerbitan/prosedur/'.$item->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-danger btn-sm">Hapus</button>

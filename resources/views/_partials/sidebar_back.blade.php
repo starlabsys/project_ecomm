@@ -23,7 +23,7 @@
        <div class="shadow-bottom"></div>
        <ul class="list-unstyled menu-categories" id="accordionExample">
           <li class="menu active">
-             <a href="#dashboard" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+             <a href="{{ url('dashboard') }}" class="dropdown-toggle">
                 <div class="">
                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
                       <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -37,7 +37,7 @@
                    </svg>
                 </div>
              </a>
-             <ul class="collapse submenu list-unstyled show" id="dashboard" data-bs-parent="#accordionExample">
+             {{-- <ul class="collapse submenu list-unstyled show" id="dashboard" data-bs-parent="#accordionExample">
                 <li class="active">
                    <a href="index-2.html"> Analytics </a>
                 </li>
@@ -47,7 +47,7 @@
                 <li>
                    <a href="index3.html"> Real Estate </a>
                 </li>
-             </ul>
+             </ul> --}}
           </li>
           <li class="menu menu-heading">
              <div class="heading">

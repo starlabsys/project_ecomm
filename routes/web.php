@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DownloadedController;
 use App\Http\Controllers\Admin\InformasiPenerbitanController as AdminInformasiPenerbitanController;
 use App\Http\Controllers\Admin\KontakController;
@@ -67,9 +68,7 @@ Route::get('/buku-fiksi', [JenisNaskahController::class, 'bukuFiksi']);
 Route::get('/prosedur-penerbitan-buku', [ProsedurPenerbitanController::class, 'buku']);
 Route::get('/prosedur-penerbitan-prosiding', [ProsedurPenerbitanController::class, 'prosiding']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -89,6 +88,8 @@ Route::group([
     ],function(){
         Route::get("/", 'index');
         Route::post('/anggota', 'storeAnggota');
+        Route::post('/anggota/edit', 'editAnggota');
+        Route::delete('/anggota/{id}', 'deleteAnggota');
 
         Route::post('/sejarah', 'storeSejarah');
     });
@@ -100,8 +101,10 @@ Route::group([
         Route::get('/', 'index');
 
         Route::post('/naskah', 'storeNaskah');
+        Route::delete('/naskah/{id}', 'deleteNaskah');
         Route::post('/persyaratan-isbn', 'storePersyaratanIsbn');
         Route::post('/prosedur', 'storeProsedur');
+        Route::delete('/prosedur/{id}', 'deleteProsedur');
     });
 
     Route::group([
@@ -113,6 +116,7 @@ Route::group([
         Route::post('/pengajuan-isbn', 'storePengajuanIsbn');
 
         Route::post('paket-penerbitan', 'storePaket');
+        Route::delete('paket-penerbitan/{id}', 'deletePaket');
     });
 
     Route::group([
@@ -121,6 +125,7 @@ Route::group([
     ],function(){
         Route::get('/', 'index');
         Route::post('/', 'store');
+        Route::delete('/{id}', 'delete');
     });
 
     Route::group([
@@ -129,6 +134,7 @@ Route::group([
     ], function(){
         Route::get('/', 'index');
         Route::post('/', 'store');
+        Route::delete('/{id}', 'delete');
     });
 
     Route::group([

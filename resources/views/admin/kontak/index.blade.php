@@ -40,8 +40,11 @@
                                     <td>{{ $item->judul_kontak }}</td>
                                     <td>{{ $item->isi_kontak }}</td>
                                     <td class="d-flex">
-                                        <button class="btn btn-warning btn-sm mr-2 ml-2">Warning</button>
-                                        <button class="btn btn-danger btn-sm mr-2 ml-2">Delete</button>
+                                        <form action="{{ url('admin/kontak/'.$item->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm">Hapus</button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach

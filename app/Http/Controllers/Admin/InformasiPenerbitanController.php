@@ -60,6 +60,18 @@ class InformasiPenerbitanController extends Controller
         return back()->withSuccess("Berhasil Menambahkan Naskah");
     }
 
+    public function deleteNaskah($id){
+        $check = Naskah::where('id', $id)->first();
+
+        if(!$check){
+            return back()->withErrors("Data Tidak Ditemukan");
+        }
+
+        $check->delete();
+
+        return back()->withSuccess("Data Berhasil Dihapus");
+    }
+
     public function storePersyaratanIsbn(Request $request){
 
         // dd($request->all());
@@ -143,5 +155,17 @@ class InformasiPenerbitanController extends Controller
         ]);
 
         return back()->withSuccess('Berhasil Menambahkan Prosedur Penerbitan Baru');
+    }
+
+    public function deleteProsedur($id){
+        $check = ProsedurPenerbitan::where('id', $id)->first();
+
+        if(!$check){
+            return back()->withErrors("Data Tidak Ditemukan");
+        }
+
+        $check->delete();
+
+        return back()->withSuccess("Data Berhasil Dihapus");
     }
 }

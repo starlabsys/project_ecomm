@@ -35,4 +35,16 @@ class KontakController extends Controller
 
         return back()->withSuccess('Berhasil Membuat Konten Kontak');
     }
+
+    public function delete($id){
+        $check = Kontak::where('id', $id)->first();
+
+        if(!$check){
+            return back()->withErrors("Data Tidak Ditemukan");
+        }
+
+        $check->delete();
+
+        return back()->withSuccess("Data Berhasil Dihapus");
+    }
 }
