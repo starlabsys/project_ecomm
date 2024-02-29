@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DownloadedController;
 use App\Http\Controllers\Admin\InformasiPenerbitanController as AdminInformasiPenerbitanController;
 use App\Http\Controllers\Admin\KontakController;
 use App\Http\Controllers\Admin\LayananController;
@@ -126,6 +127,14 @@ Route::group([
         'prefix' => 'kontak',
         'controller' => KontakController::class
     ], function(){
+        Route::get('/', 'index');
+        Route::post('/', 'store');
+    });
+
+    Route::group([
+        'prefix' => 'download',
+        'controller' => DownloadedController::class
+    ],function(){
         Route::get('/', 'index');
         Route::post('/', 'store');
     });
