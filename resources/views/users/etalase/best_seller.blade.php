@@ -34,21 +34,29 @@
                         <div class="product-item-wrapper">
                             <div class="row">
                                 @foreach($bestSeller as $key)
-                                    <div class="col-sm-6 col-md-3">
+                                    <div class="col-sm-6 col-md-4">
                                         <div class="product-item text-center">
+                                                <?php
+                                                $angka = $key->harga;
+                                                $formatMataUang = 'Rp ' . number_format($angka, 0, ',', '.');
+
+                                                $diskon = $key->diskon;
+                                                $hargaDiskon = 'Rp ' . ($angka - ($angka * $diskon / 100));
+                                                ?>
                                             <figure class="product-image">
-                                                <a href="single-product.html">
-                                                    <img src="assets/img/agency-img35.jpg" alt="">
-                                                </a>
-                                                <span class="onsale">Sale</span>
+                                                {{--                                                <a href="single-product.html">--}}
+                                                <img src="{{asset("foto_product/".$key->gambar)}}" alt="">
+                                                {{--                                                </a>--}}
+                                                <span class="onsale">{{$key->diskon}}</span>
                                             </figure>
                                             <div class="product-content">
-                                                <h4>Lenevo laptop</h4>
+                                                <h4>{{$key->nama_produk}}</h4>
                                                 <div class="product-price">
-                                                    <del>$225.00</del>
-                                                    <ins>$210.50</ins>
+                                                    <del>{{$formatMataUang}}</del>
+                                                    <br>
+                                                    <ins>{{$hargaDiskon}}</ins>
                                                 </div>
-                                                <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                                <a href="https://wa.me/+6281250281289" class="button-round-primary">Beli</a>
                                             </div>
                                         </div>
                                     </div>

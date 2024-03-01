@@ -28,9 +28,9 @@
                     <p class="mt-5">Berikut telah tersedia pedoman penulisan buku ajar/modul, buku referensi, dan buku monograf untuk standard dan ketentuan Universitas Tanjungpura</p>
                     <div class="row">
                         <div class="col-md-12 mt-3 text-center">
-                            <a href="{{asset('')}}pedoman_penulisan_buku_ajar/{{$respData['pedoman_penulisan_buku_ajar']}}" target="_blank" class="button-round-secondary">Pedoman penulisan buku ajar</a>
-                            <a href="{{asset('')}}pedoman_penulisan_buku_referensi/{{$respData['pedoman_penulisan_buku_referensi']}}" target="_blank" class="button-round-secondary">Pedoman penulisan buku referensi</a>
-                            <a href="{{asset('')}}pedoman_penulisan_buku_monograf/{{$respData['pedoman_penulisan_buku_monograf']}}" target="_blank" class="button-round-secondary">Pedoman penulisan buku monograf</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc5JTugb94zwSV99Sv71ZhS3juMkCu-FfYVk3JsStheDPeOA/viewform?pli=1" target="_blank" class="button-round-secondary">Pedoman penulisan buku ajar</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc5JTugb94zwSV99Sv71ZhS3juMkCu-FfYVk3JsStheDPeOA/viewform?pli=1" target="_blank" class="button-round-secondary">Pedoman penulisan buku referensi</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc5JTugb94zwSV99Sv71ZhS3juMkCu-FfYVk3JsStheDPeOA/viewform?pli=1" target="_blank" class="button-round-secondary">Pedoman penulisan buku monograf</a>
                         </div>
                     </div>
                 </div>

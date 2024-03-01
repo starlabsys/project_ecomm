@@ -23,6 +23,9 @@
                                 <li>
                                     <a href="{{url('tim-kami')}}">Tim Kami</a>
                                 </li>
+                                <li>
+                                    <a href="{{url('kontak-kami')}}">Kontak Kami</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
@@ -82,23 +85,23 @@
                         <li>
                             <a href="{{url('segera-terbit')}}">Segera Terbit</a>
                         </li>
-                        <li>
-                            <a href="{{url('kontak-kami')}}">Kontak Kami</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#">Jaminan Mutu</a>
-                            <ul>
-                                <li>
-                                    <a href="{{url('jaminan-mutu-sistem-dokumentasi')}}">Sistem Dokumentasi</a>
-                                </li>
-                                <li>
-                                    <a href="{{url('jaminan-mutu-audit')}}">Audit</a>
-                                </li>
-                                <li>
-                                    <a href="{{url('jaminan-mutu-tinjauan-manajemen')}}">Tinjauan Manajemen</a>
-                                </li>
-                            </ul>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="{{url('kontak-kami')}}">Kontak Kami</a>--}}
+{{--                        </li>--}}
+{{--                        <li class="menu-item-has-children">--}}
+{{--                            <a href="#">Jaminan Mutu</a>--}}
+{{--                            <ul>--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{url('jaminan-mutu-sistem-dokumentasi')}}">Sistem Dokumentasi</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{url('jaminan-mutu-audit')}}">Audit</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{url('jaminan-mutu-tinjauan-manajemen')}}">Tinjauan Manajemen</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
                         <li>
                             <a href="{{url('download')}}">Download</a>
                         </li>

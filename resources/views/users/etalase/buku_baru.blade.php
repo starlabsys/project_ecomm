@@ -56,7 +56,7 @@
                                                     <br>
                                                     <ins>{{$hargaDiskon}}</ins>
                                                 </div>
-                                                <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                                <a href="" class="button-round-primary">Beli</a>
                                             </div>
                                         </div>
                                     </div>

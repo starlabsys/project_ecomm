@@ -104,12 +104,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Pengajuan ISBN</a>
+                        <a href="{{url('pengajuan-isbn')}}">Pengajuan ISBN</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-isbn')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
@@ -123,12 +123,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Desain Cover</a>
+                        <a href="{{url('pengajuan-desain-cover')}}">Desain Cover</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-desain-cover')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
@@ -142,12 +142,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Layout</a>
+                        <a href="{{url('pengajuan-layout')}}">Layout</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-layout')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
@@ -161,12 +161,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Proofreading</a>
+                        <a href="{{url('pengajuan-proofreading')}}">Proofreading</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-proofreading')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
@@ -180,12 +180,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Editing Mekanis</a>
+                        <a href="{{url('pengajuan-editing-mekanis')}}">Editing Mekanis</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-editing-mekanis')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
@@ -199,12 +199,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Editing Subtantif</a>
+                        <a href="{{url('pengajuan-editing-subtantif')}}">Editing Subtantif</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-editing-subtantif')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
@@ -218,12 +218,12 @@
                         </span>
                     </div>
                     <h5 class="service-title">
-                        <a href="single-page.html">Paket Penerbitan</a>
+                        <a href="{{url('pengajuan-paket-penerbitan')}}">Paket Penerbitan</a>
                     </h5>
                     <p class="service-paragraph">
                         Illo tempor unde ornare ipsum vivamus facilis? Tempus mollit secate inn.
                     </p>
-                    <a href="single-page.html" class="service-btn">READ MORE
+                    <a href="{{url('pengajuan-paket-penerbitan')}}" class="service-btn">READ MORE
                         <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
