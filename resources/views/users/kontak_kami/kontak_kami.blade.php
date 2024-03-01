@@ -19,61 +19,72 @@
                 <div class="container">
                     <div class="row">
                         <div class="contact-details-list">
-                            <div class="connection-detail-wrapper">
-                                <div class="contact-tag">
+                            @foreach($kontak as $key)
+                                <div class="connection-detail-wrapper">
+                                    <div class="contact-tag">
                                         <span class="contact-icon">
-                                            <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                                            @if($key == 'Alamat')
+                                                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                                            @elseif($key == '(Contact Person 1)' || $key == '(Contact Person 2)')
+                                                <i aria-hidden="true" class="fas fa-phone-volume" style="width: 25px"></i>
+                                            @elseif($key == 'Mail')
+                                                <i aria-hidden="true" class="fas fa-envelope-open-text"></i>
+                                            @endif
+
                                         </span>
-                                    <div class="tag-content">
-                                        <span>Alamat</span>
+                                        <div class="tag-content">
+                                            <span>{{$key->judul_kontak}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info">
+                                        {!! $key->isi_kontak !!}
+{{--                                        <span>Jl Prof. Dr. H. Hadari Nawawi, Bansir Laut, Kec. Pontianak Tenggara</span>--}}
+{{--                                        <span>Kota Pontianak, Kalimantan Barat 78124</span>--}}
                                     </div>
                                 </div>
-                                <div class="contact-info">
-                                    <span>Jl Prof. Dr. H. Hadari Nawawi, Bansir Laut, Kec. Pontianak Tenggara</span>
-                                    <span>Kota Pontianak, Kalimantan Barat 78124</span>
-                                </div>
-                            </div>
-                            <div class="connection-detail-wrapper">
-                                <div class="contact-tag">
-                                        <span class="contact-icon">
-                                            <i aria-hidden="true" class="fas fa-phone-volume" style="width: 25px"></i>
-                                        </span>
-                                    <div class="tag-content">
-                                        <span>(Contact Person 1)</span>
-                                    </div>
-                                </div>
-                                <div class="contact-info">
-                                    <span>Tel : +81-245-54896</span>
-                                    <span>Mob : +81-125-87965</span>
-                                </div>
-                            </div>
-                            <div class="connection-detail-wrapper">
-                                <div class="contact-tag">
-                                        <span class="contact-icon">
-                                            <i aria-hidden="true" class="fas fa-phone-volume" style="width: 25px"></i>
-                                        </span>
-                                    <div class="tag-content">
-                                        <span>(Contact Person 2)</span>
-                                    </div>
-                                </div>
-                                <div class="contact-info">
-                                    <span>Tel : +81-245-54896</span>
-                                    <span>Mob : +81-125-87965</span>
-                                </div>
-                            </div>
-                            <div class="connection-detail-wrapper">
-                                <div class="contact-tag">
-                                        <span class="contact-icon">
-                                            <i aria-hidden="true" class="fas fa-envelope-open-text"></i>
-                                        </span>
-                                    <div class="tag-content">
-                                        <span>Mail</span>
-                                    </div>
-                                </div>
-                                <div class="contact-info">
-                                    <span><a href="https://demo.bosathemes.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8a1a6aea788aca7a5a9a1a6e6aba7a5">untanpress@untan.ac.id</a></span>
-                                </div>
-                            </div>
+                            @endforeach
+
+{{--                            <div class="connection-detail-wrapper">--}}
+{{--                                <div class="contact-tag">--}}
+{{--                                        <span class="contact-icon">--}}
+{{--                                            <i aria-hidden="true" class="fas fa-phone-volume" style="width: 25px"></i>--}}
+{{--                                        </span>--}}
+{{--                                    <div class="tag-content">--}}
+{{--                                        <span>(Contact Person 1)</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="contact-info">--}}
+{{--                                    <span>Tel : +81-245-54896</span>--}}
+{{--                                    <span>Mob : +81-125-87965</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="connection-detail-wrapper">--}}
+{{--                                <div class="contact-tag">--}}
+{{--                                        <span class="contact-icon">--}}
+{{--                                            <i aria-hidden="true" class="fas fa-phone-volume" style="width: 25px"></i>--}}
+{{--                                        </span>--}}
+{{--                                    <div class="tag-content">--}}
+{{--                                        <span>(Contact Person 2)</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="contact-info">--}}
+{{--                                    <span>Tel : +81-245-54896</span>--}}
+{{--                                    <span>Mob : +81-125-87965</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="connection-detail-wrapper">--}}
+{{--                                <div class="contact-tag">--}}
+{{--                                        <span class="contact-icon">--}}
+{{--                                            <i aria-hidden="true" class="fas fa-envelope-open-text"></i>--}}
+{{--                                        </span>--}}
+{{--                                    <div class="tag-content">--}}
+{{--                                        <span>Mail</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="contact-info">--}}
+{{--                                    <span><a href="https://demo.bosathemes.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8a1a6aea788aca7a5a9a1a6e6aba7a5">untanpress@untan.ac.id</a></span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>

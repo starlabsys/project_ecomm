@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 
+use App\Models\Kontak;
+
 class Format {
     static function messages($string)
     {
@@ -9,5 +11,13 @@ class Format {
         $str2 = str_replace('"]]', '', $str1);
 
         return $str2;
+    }
+
+    public static function footerFormat()
+    {
+        $resp  = Kontak::get();
+
+        return $resp;
+
     }
 }

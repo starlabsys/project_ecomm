@@ -26,7 +26,7 @@
                     <p class="mt-4">Jika Anda telah memiliki naskah, mari terbitkan bersama Untan Press. Klik tombol di bawah ini untuk lihat paket penerbitan kami.</p>
                     <div class="row col-md-12">
                         <div class="col-md-12 text-center">
-                            <a href="contact.html" class="button-round-primary">Paket Penerbitan</a>
+                            <a href="{{url('pengajuan-paket-penerbitan')}}" class="button-round-primary">Paket Penerbitan</a>
                         </div>
                     </div>
                 </div>

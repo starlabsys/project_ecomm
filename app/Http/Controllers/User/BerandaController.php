@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Downloaded;
+use App\Models\Kontak;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -25,10 +27,17 @@ class BerandaController extends Controller
     }
 
     public function kontakKami(){
-        return view('users.kontak_kami.kontak_kami');
+        $resp  = Kontak::get();
+        return view('users.kontak_kami.kontak_kami',[
+            'kontak' => $resp
+        ]);
     }
 
     public function download(){
-        return view('users.download.download');
+        $resp = Downloaded::where('id', 1)->first();
+
+        return view('users.download.download',[
+            'respData' => $resp
+        ]);
     }
 }

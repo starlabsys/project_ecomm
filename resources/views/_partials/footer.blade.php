@@ -48,23 +48,34 @@
                     <aside class="widget widget_text">
                         <h3 class="widget-title">Kontak Kami</h3>
                         <div class="textwidget widget-text">
+                            <?php
+                                $kontakData = App\Helpers\Format::footerFormat();
+                            ?>
+
                             <ul>
-                                <li>
-                                    <i aria-hidden="true" class="icon icon-map-marker1"></i>
-                                    3557 Derek Drive, Florida
-                                </li>
-                                <li>
-                                    <a href="tel:+1456657887">
-                                        <i aria-hidden="true" class="icon icon-phone1"></i>
-                                        +1(456)657-887, +01 2599 12
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailtop:info@domain.com">
-                                        <i aria-hidden="true" class="icon icon-envelope1"></i>
-                                        <span class="__cf_email__" data-cfemail="563f3830391632393b373f387835393b">[email&#160;protected]</span>
-                                    </a>
-                                </li>
+                                @foreach($kontakData as $dataKey)
+                                    <?php
+//                                        $icon = $dataKey['icon'];
+                                    ?>
+                                    <li>
+                                        <i aria-hidden="true" class="icon "></i>
+{{--                                        3557 Derek Drive, Florida--}}
+                                        {{ $dataKey['judul_kontak'] }}
+                                        {!! $dataKey['isi_kontak']!!}
+                                    </li>
+                                @endforeach
+{{--                                <li>--}}
+{{--                                    <a href="tel:+1456657887">--}}
+{{--                                        <i aria-hidden="true" class="icon icon-phone1"></i>--}}
+{{--                                        +1(456)657-887, +01 2599 12--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="mailtop:info@domain.com">--}}
+{{--                                        <i aria-hidden="true" class="icon icon-envelope1"></i>--}}
+{{--                                        <span class="__cf_email__" data-cfemail="563f3830391632393b373f387835393b">[email&#160;protected]</span>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
                             </ul>
                         </div>
                     </aside>

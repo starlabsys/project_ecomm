@@ -33,107 +33,127 @@
                         </div>
                         <div class="product-item-wrapper">
                             <div class="row">
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img35.jpg" alt="">
-                                            </a>
-                                            <span class="onsale">Sale</span>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Lenevo laptop</h4>
-                                            <div class="product-price">
-                                                <del>$225.00</del>
-                                                <ins>$210.50</ins>
+                                @foreach($diskon as $key)
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="product-item text-center">
+                                            <figure class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="assets/img/agency-img35.jpg" alt="">
+                                                </a>
+                                                <span class="onsale">Sale</span>
+                                            </figure>
+                                            <div class="product-content">
+                                                <h4>Lenevo laptop</h4>
+                                                <div class="product-price">
+                                                    <del>$225.00</del>
+                                                    <ins>$210.50</ins>
+                                                </div>
+                                                <a href="cart.html" class="button-round-primary">Add to cart</a>
                                             </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img34.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Mackbook</h4>
-                                            <div class="product-price">
-                                                <ins>$180.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img33.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>office Chair</h4>
-                                            <div class="product-price">
-                                                <del>$55.55</del>
-                                                <ins>$50.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img32.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Office Table</h4>
-                                            <div class="product-price">
-                                                <ins>$325.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img30.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Office Tools</h4>
-                                            <div class="product-price">
-                                                <ins>$15.99</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img31.jpg" alt="">
-                                            </a>
-                                            <span class="onsale">Sale</span>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Study Table</h4>
-                                            <div class="product-price">
-                                                <del>$125.00</del>
-                                                <ins>$120.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+{{--                                <div class="col-sm-6 col-md-3">--}}
+{{--                                    <div class="product-item text-center">--}}
+{{--                                        <figure class="product-image">--}}
+{{--                                            <a href="single-product.html">--}}
+{{--                                                <img src="assets/img/agency-img35.jpg" alt="">--}}
+{{--                                            </a>--}}
+{{--                                            <span class="onsale">Sale</span>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="product-content">--}}
+{{--                                            <h4>Lenevo laptop</h4>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <del>$225.00</del>--}}
+{{--                                                <ins>$210.50</ins>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="cart.html" class="button-round-primary">Add to cart</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-6 col-md-3">--}}
+{{--                                    <div class="product-item text-center">--}}
+{{--                                        <figure class="product-image">--}}
+{{--                                            <a href="single-product.html">--}}
+{{--                                                <img src="assets/img/agency-img34.jpg" alt="">--}}
+{{--                                            </a>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="product-content">--}}
+{{--                                            <h4>Mackbook</h4>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <ins>$180.00</ins>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="cart.html" class="button-round-primary">Add to cart</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-6 col-md-3">--}}
+{{--                                    <div class="product-item text-center">--}}
+{{--                                        <figure class="product-image">--}}
+{{--                                            <a href="single-product.html">--}}
+{{--                                                <img src="assets/img/agency-img33.jpg" alt="">--}}
+{{--                                            </a>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="product-content">--}}
+{{--                                            <h4>office Chair</h4>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <del>$55.55</del>--}}
+{{--                                                <ins>$50.00</ins>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="cart.html" class="button-round-primary">Add to cart</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-6 col-md-3">--}}
+{{--                                    <div class="product-item text-center">--}}
+{{--                                        <figure class="product-image">--}}
+{{--                                            <a href="single-product.html">--}}
+{{--                                                <img src="assets/img/agency-img32.jpg" alt="">--}}
+{{--                                            </a>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="product-content">--}}
+{{--                                            <h4>Office Table</h4>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <ins>$325.00</ins>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="cart.html" class="button-round-primary">Add to cart</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-6 col-md-3">--}}
+{{--                                    <div class="product-item text-center">--}}
+{{--                                        <figure class="product-image">--}}
+{{--                                            <a href="single-product.html">--}}
+{{--                                                <img src="assets/img/agency-img30.jpg" alt="">--}}
+{{--                                            </a>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="product-content">--}}
+{{--                                            <h4>Office Tools</h4>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <ins>$15.99</ins>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="cart.html" class="button-round-primary">Add to cart</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-6 col-md-3">--}}
+{{--                                    <div class="product-item text-center">--}}
+{{--                                        <figure class="product-image">--}}
+{{--                                            <a href="single-product.html">--}}
+{{--                                                <img src="assets/img/agency-img31.jpg" alt="">--}}
+{{--                                            </a>--}}
+{{--                                            <span class="onsale">Sale</span>--}}
+{{--                                        </figure>--}}
+{{--                                        <div class="product-content">--}}
+{{--                                            <h4>Study Table</h4>--}}
+{{--                                            <div class="product-price">--}}
+{{--                                                <del>$125.00</del>--}}
+{{--                                                <ins>$120.00</ins>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="cart.html" class="button-round-primary">Add to cart</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                             <!-- pagination html start-->
                             {{--                            <div class="post-navigation-wrap">--}}
@@ -159,14 +179,14 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="sidebar">
-                            <aside class="widget search_widget">
-                                <form>
-                                    <input type="text" name="search" placeholder="Search..">
-                                    <button class="search-btn">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </form>
-                            </aside>
+{{--                            <aside class="widget search_widget">--}}
+{{--                                <form>--}}
+{{--                                    <input type="text" name="search" placeholder="Search..">--}}
+{{--                                    <button class="search-btn">--}}
+{{--                                        <i class="fas fa-search"></i>--}}
+{{--                                    </button>--}}
+{{--                                </form>--}}
+{{--                            </aside>--}}
                             {{--                            <aside class="widget price_handel_widget">--}}
                             {{--                                <div class="divider-wrapper">--}}
                             {{--                                        <span class="title-divider">--}}
@@ -193,29 +213,29 @@
                                 <ul>
                                     <li>
                                         <figure class="product-thumb">
-                                            <a href="single-product.html"><img src="assets/img/agency-img30-300x300.jpg" alt=""></a>
+                                            <a href="{{url('etalase-best-seller')}}"><img src="assets/img/agency-img30-300x300.jpg" alt=""></a>
                                         </figure>
                                         <div class="product-content">
                                             <h5>Best Seller</h5>
-                                            <span class="count">(4)</span>
+                                            <span class="count">({{$total}})</span>
                                         </div>
                                     </li>
                                     <li>
                                         <figure class="product-thumb">
-                                            <a href="single-product.html"><img src="assets/img/agency-img35-300x300.jpg" alt=""></a>
+                                            <a href="{{url('etalase-sedang-diskon')}}"><img src="assets/img/agency-img35-300x300.jpg" alt=""></a>
                                         </figure>
                                         <div class="product-content">
                                             <h5>Sedang Diskon</h5>
-                                            <span class="count">(2)</span>
+                                            <span class="count">({{$totalDiskon}})</span>
                                         </div>
                                     </li>
                                     <li>
                                         <figure class="product-thumb">
-                                            <a href="single-product.html"><img src="assets/img/agency-img32-300x300.jpg" alt=""></a>
+                                            <a href="{{url('etalase-buku-baru')}}"><img src="assets/img/agency-img32-300x300.jpg" alt=""></a>
                                         </figure>
                                         <div class="product-content">
                                             <h5>Buku Baru</h5>
-                                            <span class="count">(5)</span>
+                                            <span class="count">({{$totalNew}})</span>
                                         </div>
                                     </li>
                                 </ul>
