@@ -60,6 +60,57 @@ class ProfilController extends Controller
         return back()->withSuccess("Berhasil Menambahkan Anggota Tim");
     }
 
+    public function editAnggota(Request $request){
+        $validator = Validator::make($request->all(), [
+            'nama_anggota' => 'required',
+            'jabatan_anggota' => 'required',
+            'foto_anggota' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        if($validator->fails()){
+            return back()->withErrors($validator->errors()->first());
+        }
+
+        $check = Team::where('id', $request->id)->first();
+
+
+        $check->update([
+            'nama_anggota' => $request->nama_anggota,
+            'jabatan_anggota' => $request->jabatan_anggota,
+            'facebook_anggota' => $request->facebook_anggota ?? "#",
+            'twitter_anggota' => $request->twitter_anggota ?? "#",
+            'youtube_anggota' => $request->youtube_anggota ?? "#",
+            'instagram_anggota' => $request->instagram_anggota ?? "#",
+        ]);
+
+        if(array_key_exists('foto_anggota', $request->all())){
+            $file = $request['foto_anggota'];
+            $nama_file = time()."_".$file->getClientOriginalName();
+            $tujuan_upload = 'foto_anggota';
+            $file->move($tujuan_upload,$nama_file);
+
+            $check->update([
+                'foto_anggota' => $nama_file,
+            ]);
+        }
+
+        return back()->withSuccess("Berhasil Mengubah Data Anggota Tim");
+
+        
+    }
+
+    public function deleteAnggota($id){
+        $team = Team::where('id', $id)->first();
+
+        if(!$team){
+            return back()->withErrors("Data Tidak Ditemukan");
+        }
+
+        $team->delete();
+
+        return back()->withSuccess("Data Berhasil Dihapus");
+    }
+
     public function storeSejarah(Request $request){
         // dd($request->all());
         $validator = Validator::make($request->all(), [

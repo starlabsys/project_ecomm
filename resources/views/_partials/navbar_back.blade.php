@@ -18,7 +18,7 @@
 
         <ul class="navbar-item flex-row ms-lg-auto ms-0">
 
-            <li class="nav-item dropdown language-dropdown">
+            {{-- <li class="nav-item dropdown language-dropdown">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="https://designreset.com/equation/html/src/assets/img/1x1/us.svg" class="flag-width" alt="flag">
                 </a>
@@ -29,7 +29,7 @@
                     <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="https://designreset.com/equation/html/src/assets/img/1x1/in.svg" class="flag-width" alt="flag"> <span class="align-self-center">&nbsp;Hindi</span></a>
                     <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="https://designreset.com/equation/html/src/assets/img/1x1/de.svg" class="flag-width" alt="flag"> <span class="align-self-center">&nbsp;German</span></a>
                 </div>
-            </li>
+            </li> --}}
 
             <li class="nav-item theme-toggle-item">
                 <a href="javascript:void(0);" class="nav-link theme-toggle">
@@ -38,7 +38,7 @@
                 </a>
             </li>
 
-            <li class="nav-item dropdown notification-dropdown">
+            {{-- <li class="nav-item dropdown notification-dropdown">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="badge badge-success"></span>
                 </a>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 
-            </li>
+            </li> --}}
 
             <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -169,12 +169,12 @@
                                 &#x1F44B;
                             </div>
                             <div class="media-body">
-                                <h5>Shaun Park</h5>
-                                <p>Project Leader</p>
+                                <h5>{{ Auth::user()->name }}</h5>
+                                <p>Role: Admin</p>
                             </div>
                         </div>
                     </div>
-                    <div class="dropdown-item">
+                    {{-- <div class="dropdown-item">
                         <a href="user-profile.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>Profile</span>
                         </a>
@@ -188,9 +188,12 @@
                         <a href="auth-boxed-lockscreen.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>Lock Screen</span>
                         </a>
-                    </div>
+                    </div> --}}
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                     <div class="dropdown-item">
-                        <a href="auth-boxed-signin.html">
+                        <a href="javascript:void" onclick="$('#logout-form').submit();">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
                         </a>
                     </div>

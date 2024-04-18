@@ -19,16 +19,16 @@
                     <p>Selamat datang di halaman ini, di sini Anda akan menemukan kumpulan tautan/link unduhan untuk dokumen-dokumen berupa Template Naskah UNESCO, Surat Keaslian Karya, serta Pedoman Penulisan Buku (Ajar, Monograf, dan Referensi).</p>
                     <div class="row">
                         <div class="col-md-12 mt-3 text-center">
-                            <a href="contact.html" class="button-round-primary">Template Naskah UNESCO</a>
-                            <a href="contact.html" class="button-round-primary">Surat Keaslian Karya</a>
+                            <a href="{{ $response->template_naskah }}" target="_blank" class="button-round-primary">Template Naskah UNESCO</a>
+                            <a href="{{ $response->file_keaslian }}" target="_blank" class="button-round-primary">Surat Keaslian Karya</a>
                         </div>
                     </div>
                     <p class="mt-5">Berikut telah tersedia pedoman penulisan buku ajar/modul, buku referensi, dan buku monograf untuk standard dan ketentuan Universitas Tanjungpura</p>
                     <div class="row">
                         <div class="col-md-12 mt-3 text-center">
-                            <a href="contact.html" class="button-round-secondary">Pedoman penulisan buku ajar</a>
-                            <a href="contact.html" class="button-round-secondary">Pedoman penulisan buku referensi</a>
-                            <a href="contact.html" class="button-round-secondary">Pedoman penulisan buku monograf</a>
+                            <a href="{{ $response->pedoman_penulisan_buku_ajar }}" target="_blank" class="button-round-secondary">Pedoman penulisan buku ajar</a>
+                            <a href="{{ $response->pedoman_penulisan_buku_referensi }}" target="_blank" class="button-round-secondary">Pedoman penulisan buku referensi</a>
+                            <a href="{{ $response->pedoman_penulisan_buku_monograf }}" target="_blank" class="button-round-secondary">Pedoman penulisan buku monograf</a>
                         </div>
                     </div>
                 </div>

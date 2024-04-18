@@ -36,9 +36,6 @@
                             Hubungi kami untuk penerbitan buku, jurnal, dan lain-lain :
                         </h6>
                         <h3 class="banner-contact-number">(+984) 256 897 225</h3>
-{{--                        <span class="banner-contact-info">--}}
-{{--                            Senectus dictum doloribus senectus laboriosam deserunt molestias rhoncus nonummy excepteur remr.--}}
-{{--                        </span>--}}
                     </div>
                 </div>
             </div>
@@ -63,44 +60,12 @@
                             <b>University Press</b> di Universitas Tanjungpura, melalui UNTAN Press, menjadi tulang punggung dalam publikasi dan distribusi ilmu pengetahuan. Dengan fokus pada e-book, buku konvensional, dan sitasi, UNTAN Press tidak hanya mendukung industri buku tetapi juga membentuk komunitas ilmuwan yang inovatif di universitas.
                         </p>
                     </div>
-{{--                    <div class="about-list">--}}
-{{--                        <ul>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Pengajuan ISBN--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Desain Cover--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Layout--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Proofreading--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Editing Mekanis--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Editing Subtantif--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <i aria-hidden="true" class="icon icon-checked1"></i>--}}
-{{--                                Paket Penerbitan--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
                     <div class="about-count-up">
                         <div class="counter-inner">
                             <div class="counter-content">
                                 <h6 class="count-title">Bukun Berhasil Terbit</h6>
                                 <div class="counter-no">
-                                    <span class="counter">3</span>K+
+                                    <span class="counter">{{$totalBestSeller}}</span>+
                                 </div>
                             </div>
                         </div>
@@ -108,7 +73,7 @@
                             <div class="counter-content">
                                 <h6 class="count-title">Total Buku</h6>
                                 <div class="counter-no">
-                                    <span class="counter">15</span>+
+                                    <span class="counter">{{$totalBook}}</span>+
                                 </div>
                             </div>
                         </div>
@@ -317,100 +282,60 @@
         </div>
     </section>
     <!-- home partner section html -->
-    <section class="inner-banner-wrap">
-        <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
-            <div class="container">
-                <div class="inner-banner-content">
-                    <h1 class="inner-title">Buku Baru</h1>
+    @if($newBook->count() > 0)
+        <section class="inner-banner-wrap">
+            <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
+                <div class="container">
+                    <div class="inner-banner-content">
+                        <h1 class="inner-title">Buku Baru</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="home-process-v2-section" style="margin-top: -200px">
-        <div class="product-outer-wrap product-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 right-sidebar">
-                        <div class="product-notices-wrapper">
-                            <a href=""><p class="product-result-count">Showing all</p></a>
-                        </div>
-                        <div class="product-item-wrapper">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img35.jpg" alt="">
-                                            </a>
-                                            <span class="onsale">Sale</span>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Lenevo laptop</h4>
-                                            <div class="product-price">
-                                                <del>$225.00</del>
-                                                <ins>$210.50</ins>
+        </section>
+        <section class="home-process-v2-section" style="margin-top: -200px">
+            <div class="product-outer-wrap product-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 right-sidebar">
+                            <div class="product-notices-wrapper">
+                                <a href=""><p class="product-result-count">Showing all</p></a>
+                            </div>
+                            <div class="product-item-wrapper">
+                                <div class="row">
+                                    @foreach($newBook as $booknew)
+                                        <div class="col-sm-3">
+                                            <div class="product-item text-center">
+                                                <figure class="product-image">
+                                                    <a href="single-product.html">
+                                                        <img src="{{asset('foto_product/'.$booknew['gambar'])}}" alt="">
+                                                    </a>
+                                                    @if($booknew['diskon'] != 0)
+                                                        <span class="onsale">{{$booknew['diskon']}}</span>
+                                                    @endif
+
+                                                </figure>
+                                                <div class="product-content">
+                                                    <h4>{{$booknew['nama_produk']}}</h4>
+                                                    <div class="product-price">
+                                                        <del>Rp. {{number_format($booknew['harga'])}}</del>
+                                                        <br>
+                                                        <ins>Rp. {{number_format($booknew['harga'] - ($booknew['harga'] * $booknew['diskon'] / 100))}}</ins>
+                                                    </div>
+                                                    <a href="cart.html" class="button-round-primary">Add to cart</a>
+                                                </div>
                                             </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img34.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Mackbook</h4>
-                                            <div class="product-price">
-                                                <ins>$180.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img33.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>office Chair</h4>
-                                            <div class="product-price">
-                                                <del>$55.55</del>
-                                                <ins>$50.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img32.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Office Table</h4>
-                                            <div class="product-price">
-                                                <ins>$325.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
     <!-- home partner section html -->
+    @if($discount->count() > 0)
     <section class="inner-banner-wrap">
         <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
             <div class="container">
@@ -430,73 +355,30 @@
                         </div>
                         <div class="product-item-wrapper">
                             <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img35.jpg" alt="">
-                                            </a>
-                                            <span class="onsale">Sale</span>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Lenevo laptop</h4>
-                                            <div class="product-price">
-                                                <del>$225.00</del>
-                                                <ins>$210.50</ins>
+                                @foreach($discount as $discountBook)
+                                    <div class="col-sm-3">
+                                        <div class="product-item text-center">
+                                            <figure class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="{{asset('foto_product/'.$discountBook['gambar'])}}" alt="">
+                                                </a>
+                                                @if($discountBook['diskon'] != 0)
+                                                    <span class="onsale">{{$discountBook['diskon']}}</span>
+                                                @endif
+
+                                            </figure>
+                                            <div class="product-content">
+                                                <h4>{{$discountBook['nama_produk']}}</h4>
+                                                <div class="product-price">
+                                                    <del>Rp. {{number_format($discountBook['harga'])}}</del>
+                                                    <br>
+                                                    <ins>Rp. {{number_format($discountBook['harga'] - ($discountBook['harga'] * $discountBook['diskon'] / 100))}}</ins>
+                                                </div>
+                                                <a href="cart.html" class="button-round-primary">Add to cart</a>
                                             </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img34.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Mackbook</h4>
-                                            <div class="product-price">
-                                                <ins>$180.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img33.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>office Chair</h4>
-                                            <div class="product-price">
-                                                <del>$55.55</del>
-                                                <ins>$50.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img32.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Office Table</h4>
-                                            <div class="product-price">
-                                                <ins>$325.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -504,7 +386,9 @@
             </div>
         </div>
     </section>
+    @endif
     <!-- home partner section html -->
+    @if($bestSeller->count() > 0)
     <section class="inner-banner-wrap">
         <div class="inner-baner-container" style="background-image: url(assets/img/agency-img01.jpg);">
             <div class="container">
@@ -524,73 +408,30 @@
                         </div>
                         <div class="product-item-wrapper">
                             <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img35.jpg" alt="">
-                                            </a>
-                                            <span class="onsale">Sale</span>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Lenevo laptop</h4>
-                                            <div class="product-price">
-                                                <del>$225.00</del>
-                                                <ins>$210.50</ins>
+                                @foreach($bestSeller as $sellerBest)
+                                    <div class="col-sm-3">
+                                        <div class="product-item text-center">
+                                            <figure class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="{{asset('foto_product/'.$sellerBest['gambar'])}}" alt="">
+                                                </a>
+                                                @if($sellerBest['diskon'] != 0)
+                                                    <span class="onsale">{{$sellerBest['diskon']}}</span>
+                                                @endif
+
+                                            </figure>
+                                            <div class="product-content">
+                                                <h4>{{$sellerBest['nama_produk']}}</h4>
+                                                <div class="product-price">
+                                                    <del>Rp. {{number_format($sellerBest['harga'])}}</del>
+                                                    <br>
+                                                    <ins>Rp. {{number_format($sellerBest['harga'] - ($sellerBest['harga'] * $sellerBest['diskon'] / 100))}}</ins>
+                                                </div>
+                                                <a href="cart.html" class="button-round-primary">Add to cart</a>
                                             </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img34.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Mackbook</h4>
-                                            <div class="product-price">
-                                                <ins>$180.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img33.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>office Chair</h4>
-                                            <div class="product-price">
-                                                <del>$55.55</del>
-                                                <ins>$50.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="product-item text-center">
-                                        <figure class="product-image">
-                                            <a href="single-product.html">
-                                                <img src="assets/img/agency-img32.jpg" alt="">
-                                            </a>
-                                        </figure>
-                                        <div class="product-content">
-                                            <h4>Office Table</h4>
-                                            <div class="product-price">
-                                                <ins>$325.00</ins>
-                                            </div>
-                                            <a href="cart.html" class="button-round-primary">Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -598,6 +439,7 @@
             </div>
         </div>
     </section>
+    @endif
     <!-- home partner section html -->
     <section class="home-partner-v2-section">
         <div class="overlay"></div>
@@ -656,82 +498,6 @@
             </div>
         </div>
     </section>
-    <!-- home-blog-v2-section -->
-    <section class="home-blog-v2-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-head-v2 text-center">
-                        <div class="title-divider-left">
-                            OUR BLOGS
-                        </div>
-                        <h2 class="section-title">
-                            Checkout Our Latest Blog & Insights
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-inner">
-                <div class="row d-flex justify-content-center justify-content-xl-start">
-                    <div class="col-sm-6 col-lg-4">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <a href="single-blog.html">
-                                    <img src="{{ asset('') }}assets/img/agency-img16.jpg" alt="">
-                                </a>
-                                <span class="cat-meta"></span>
-                            </figure>
-                            <div class="entry-content">
-                                <h4>
-                                    <a href="single-blog.html">Maxime rhoncus aliquet sint eu accusantium illum.</a>
-                                </h4>
-                                <p>
-                                    Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?
-                                </p>
-                                <a href="single-blog.html" class="blog-link"> READ MORE</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 ">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <a href="single-blog.html">
-                                    <img src="{{ asset('') }}assets/img/agency-img15.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="entry-content">
-                                <h4>
-                                    <a href="single-blog.html">Cursus egestas tristique viverra cum harum, ulla.</a>
-                                </h4>
-                                <p>
-                                    Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?
-                                </p>
-                                <a href="single-blog.html" class="blog-link"> READ MORE</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 ">
-                        <article class="post">
-                            <figure class="feature-image">
-                                <a href="single-post.html">
-                                    <img src="{{ asset('') }}assets/img/agency-img14.jpg" alt="">
-                                </a>
-                            </figure>
-                            <div class="entry-content">
-                                <h4>
-                                    <a href="single-blog.html">Felis platea eget justo, esse cumque dolorum.</a>
-                                </h4>
-                                <p>
-                                    Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?
-                                </p>
-                                <a href="single-blog.html" class="blog-link"> READ MORE</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- home contact v2 section -->
     <section class="home-contact-v2-section">
         <div class="overlay"></div>
@@ -778,12 +544,12 @@
                                                 <i class="fab fa-facebook"></i>
                                             </a>
                                         </li>
+{{--                                        <li>--}}
+{{--                                            <a href="https://twitter.com/?lang=en">--}}
+{{--                                                <i class="fab fa-twitter"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
                                         <li>
-                                            <a href="https://twitter.com/?lang=en">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    <li>
                                             <a href="https://www.youtube.com/">
                                                 <i class="fab fa-youtube"></i>
                                             </a>
@@ -793,16 +559,16 @@
                                                 <i class="fab fa-instagram"></i>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="https://www.pinterest.com/">
-                                                <i class="fab fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/">
-                                                <i class="fab fa-linkedin"></i>
-                                            </a>
-                                        </li>
+{{--                                        <li>--}}
+{{--                                            <a href="https://www.pinterest.com/">--}}
+{{--                                                <i class="fab fa-pinterest"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
+{{--                                        <li>--}}
+{{--                                            <a href="https://www.linkedin.com/">--}}
+{{--                                                <i class="fab fa-linkedin"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
                                     </ul>
                                 </div>
                             </div>

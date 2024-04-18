@@ -128,6 +128,37 @@
             .catch( error => {
                 console.error( error );
             } );
+        ClassicEditor
+            .create( document.querySelector( '.editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+
+        ClassicEditor
+            .create( document.querySelector( '.editor2' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        ClassicEditor
+            .create( document.querySelector( '.editor3' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        ClassicEditor
+            .create( document.querySelector( '.editor4' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        ClassicEditor
+            .create( document.querySelector( '.editor5' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        ClassicEditor
+            .create( document.querySelector( '.editor6' ) )
+            .catch( error => {
+                console.error( error );
+            } );
     </script>
     <script>
         $(document).ready(function() {
@@ -153,7 +184,7 @@
   
         });
       </script>
-
+      @yield('script')
 </body>
 
 <!-- Mirrored from designreset.com/equation/html/vertical-light-menu/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 05:46:36 GMT -->

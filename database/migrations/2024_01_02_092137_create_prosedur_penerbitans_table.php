@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('prosedur_penerbitans', function (Blueprint $table) {
             $table->id();
+            $table->string('type');
+            $table->string('judul_prosedur');
+            $table->string('isi_prosedur');
             $table->timestamps();
         });
     }

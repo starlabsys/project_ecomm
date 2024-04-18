@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('naskahs', function (Blueprint $table) {
             $table->id();
             $table->string('nama_naskah');
-            $table->string('konten_naskah');
+            $table->text('konten_naskah');
             $table->string('foto_naskah');
             $table->timestamps();
         });
