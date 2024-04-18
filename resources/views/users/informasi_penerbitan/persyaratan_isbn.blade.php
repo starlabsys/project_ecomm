@@ -19,8 +19,8 @@
                     {!! $resp['konten'] !!}
                     <div class="row">
                         <div class="col-md-12 mt-3 text-center">
-                            <a href="{{asset('')}}file_naskah_penerbitan/{{$resp['file_naskah']}}" target="_blank" class="button-round-primary">Tampilkan Naskah (UNESCO)</a>
-                            <a href="{{asset('')}}file_naskah_penerbitan/{{$resp['file_keaslian']}}" target="_blank" class="button-round-primary">Surat Keaslian Karya</a>
+                            <a href="{{$resp['file_naskah']}}" target="_blank" class="button-round-primary">Tampilkan Naskah (UNESCO)</a>
+                            <a href="{{$resp['file_keaslian']}}" target="_blank" class="button-round-primary">Surat Keaslian Karya</a>
                         </div>
                     </div>
                     <p class="mt-4">Jika Anda telah memiliki naskah, mari terbitkan bersama Untan Press. Klik tombol di bawah ini untuk lihat paket penerbitan kami.</p>

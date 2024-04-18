@@ -21,11 +21,11 @@ class DownloadedController extends Controller
         // dd($request->all());
         $validator = Validator::make($request->all(), [
             'konten'=>'required',
-            'template_naskah' => 'nullable|max:2048',
-            'file_keaslian' => 'nullable|max:2048',
-            'pedoman_penulisan_buku_ajar' => 'nullable|max:2048',
-            'pedoman_penulisan_buku_referensi' => 'nullable|max:2048',
-            'pedoman_penulisan_buku_monograf' => 'nullable|max:2048',
+            'template_naskah' => 'nullable',
+            'file_keaslian' => 'nullable',
+            'pedoman_penulisan_buku_ajar' => 'nullable',
+            'pedoman_penulisan_buku_referensi' => 'nullable',
+            'pedoman_penulisan_buku_monograf' => 'nullable',
         ]);
 
         if($validator->fails()){
@@ -34,77 +34,82 @@ class DownloadedController extends Controller
 
         $check = Downloaded::where('id', 1)->first();
 
-        if(array_key_exists('template_naskah', $request->all())){
+        // if(array_key_exists('template_naskah', $request->all())){
             
-            $file = $request['template_naskah'];
-            $nama_file = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'template_naskah_penerbitan';
-            $file->move($tujuan_upload,$nama_file);
-        }
+        //     $file = $request['template_naskah'];
+        //     $nama_file = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'template_naskah_penerbitan';
+        //     $file->move($tujuan_upload,$nama_file);
+        // }
 
-        if(array_key_exists('file_keaslian', $request->all())){
-            $file = $request['file_keaslian'];
-            $nama_file_keaslian = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'file_keaslian';
-            $file->move($tujuan_upload,$nama_file_keaslian);
-        }
+        // if(array_key_exists('file_keaslian', $request->all())){
+        //     $file = $request['file_keaslian'];
+        //     $nama_file_keaslian = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'file_keaslian';
+        //     $file->move($tujuan_upload,$nama_file_keaslian);
+        // }
 
-        if(array_key_exists('pedoman_penulisan_buku_ajar', $request->all())){
-            $file = $request['pedoman_penulisan_buku_ajar'];
-            $pedoman_penulisan_buku_ajar = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'pedoman_penulisan_buku_ajar';
-            $file->move($tujuan_upload,$pedoman_penulisan_buku_ajar);
-        }
+        // if(array_key_exists('pedoman_penulisan_buku_ajar', $request->all())){
+        //     $file = $request['pedoman_penulisan_buku_ajar'];
+        //     $pedoman_penulisan_buku_ajar = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'pedoman_penulisan_buku_ajar';
+        //     $file->move($tujuan_upload,$pedoman_penulisan_buku_ajar);
+        // }
 
-        if(array_key_exists('pedoman_penulisan_buku_referensi', $request->all())){
-            $file = $request['pedoman_penulisan_buku_referensi'];
-            $pedoman_penulisan_buku_referensi = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'pedoman_penulisan_buku_referensi';
-            $file->move($tujuan_upload,$pedoman_penulisan_buku_referensi);
-        }
+        // if(array_key_exists('pedoman_penulisan_buku_referensi', $request->all())){
+        //     $file = $request['pedoman_penulisan_buku_referensi'];
+        //     $pedoman_penulisan_buku_referensi = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'pedoman_penulisan_buku_referensi';
+        //     $file->move($tujuan_upload,$pedoman_penulisan_buku_referensi);
+        // }
 
-        if(array_key_exists('pedoman_penulisan_buku_monograf', $request->all())){
-            $file = $request['pedoman_penulisan_buku_monograf'];
-            $pedoman_penulisan_buku_monograf = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'pedoman_penulisan_buku_monograf';
-            $file->move($tujuan_upload,$pedoman_penulisan_buku_monograf);
-        }
+        // if(array_key_exists('pedoman_penulisan_buku_monograf', $request->all())){
+        //     $file = $request['pedoman_penulisan_buku_monograf'];
+        //     $pedoman_penulisan_buku_monograf = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'pedoman_penulisan_buku_monograf';
+        //     $file->move($tujuan_upload,$pedoman_penulisan_buku_monograf);
+        // }
 
         if($check){
 
             $check->update([
                 'konten' => $request->konten,
+                'template_naskah' => $request->template_naskah,
+                'file_keaslian' => $request->file_keaslian,
+                'pedoman_penulisan_buku_ajar' => $request->pedoman_penulisan_buku_ajar,
+                'pedoman_penulisan_buku_referensi' => $request->pedoman_penulisan_buku_referensi,
+                'pedoman_penulisan_buku_monograf' => $request->pedoman_penulisan_buku_monograf,
             ]);
             
-            if(array_key_exists('template_naskah', $request->all())){
-                $check->update([
-                    'template_naskah' => $nama_file,
-                ]);
-            }
+            // if(array_key_exists('template_naskah', $request->all())){
+            //     $check->update([
+            //         'template_naskah' => $nama_file,
+            //     ]);
+            // }
 
-            if(array_key_exists('file_keaslian', $request->all())){
-                $check->update([
-                    'file_keaslian' => $nama_file_keaslian,
-                ]);
-            }
+            // if(array_key_exists('file_keaslian', $request->all())){
+            //     $check->update([
+            //         'file_keaslian' => $nama_file_keaslian,
+            //     ]);
+            // }
 
-            if(array_key_exists('pedoman_penulisan_buku_ajar', $request->all())){
+            // if(array_key_exists('pedoman_penulisan_buku_ajar', $request->all())){
 
-                $check->update([
-                    'pedoman_penulisan_buku_ajar' => $pedoman_penulisan_buku_ajar,
-                ]);
+            //     $check->update([
+            //         'pedoman_penulisan_buku_ajar' => $pedoman_penulisan_buku_ajar,
+            //     ]);
 
-            }
-            if(array_key_exists('pedoman_penulisan_buku_referensi', $request->all())){
-                $check->update([
-                    'pedoman_penulisan_buku_referensi' => $pedoman_penulisan_buku_referensi,
-                ]);
-            }
-            if(array_key_exists('pedoman_penulisan_buku_monograf', $request->all())){
-                $check->update([
-                    'pedoman_penulisan_buku_monograf' => $pedoman_penulisan_buku_monograf,
-                ]);
-            }
+            // }
+            // if(array_key_exists('pedoman_penulisan_buku_referensi', $request->all())){
+            //     $check->update([
+            //         'pedoman_penulisan_buku_referensi' => $pedoman_penulisan_buku_referensi,
+            //     ]);
+            // }
+            // if(array_key_exists('pedoman_penulisan_buku_monograf', $request->all())){
+            //     $check->update([
+            //         'pedoman_penulisan_buku_monograf' => $pedoman_penulisan_buku_monograf,
+            //     ]);
+            // }
 
             return back()->withSuccess("Berhasil Mengubah Informasi Persyaratan ISBN");
 
@@ -112,11 +117,11 @@ class DownloadedController extends Controller
 
         Downloaded::create([
             'konten' => $request->konten,
-            'template_naskah' => $nama_file,
-            'file_keaslian' => $nama_file_keaslian,
-            'pedoman_penulisan_buku_ajar' => $pedoman_penulisan_buku_ajar,
-            'pedoman_penulisan_buku_referensi' => $pedoman_penulisan_buku_referensi,
-            'pedoman_penulisan_buku_monograf' => $pedoman_penulisan_buku_monograf,
+            'template_naskah' => $request->template_naskah,
+            'file_keaslian' => $request->file_keaslian,
+            'pedoman_penulisan_buku_ajar' => $request->pedoman_penulisan_buku_ajar,
+            'pedoman_penulisan_buku_referensi' => $request->pedoman_penulisan_buku_referensi,
+            'pedoman_penulisan_buku_monograf' => $request->pedoman_penulisan_buku_monograf,
         ]);
 
         return back()->withSuccess('Berhasil Menyimpan Data Konten');

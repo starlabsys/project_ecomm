@@ -33,31 +33,26 @@
     
                          <div class="col-md-6 mt-3">
                             <label for="" class="control-label">Template Naskah (UNESCO)</label>
-                            <input type="file" class="form-control" name="template_naskah">
-                            <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                            <input type="text" class="form-control" name="template_naskah" value="{{ @$data->template_naskah }}">
                          </div>
                          <div class="col-md-6 mt-3">
                             <label for="" class="control-label">Surat Keaslian Karya</label>
-                            <input type="file" class="form-control" name="file_keaslian">
-                            <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                            <input type="text" class="form-control" name="file_keaslian" value="{{ @$data->file_keaslian }}">
                          </div>
     
                          <div class="col-md-6 mt-3">
                             <label for="" class="control-label">Pedoman Penulisan Buku Ajar</label>
-                            <input type="file" class="form-control" name="pedoman_penulisan_buku_ajar">
-                            <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                            <input type="text" class="form-control" name="pedoman_penulisan_buku_ajar" value="{{ @$data->pedoman_penulisan_buku_ajar }}">
                          </div>
     
                          <div class="col-md-6 mt-3">
                             <label for="" class="control-label">Pedoman Penulisan Buku Referensi</label>
-                            <input type="file" class="form-control" name="pedoman_penulisan_buku_referensi">
-                            <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                            <input type="text" class="form-control" name="pedoman_penulisan_buku_referensi" value="{{ @$data->pedoman_penulisan_buku_referensi }}">
                          </div>
     
                          <div class="col-md-6 mt-3">
                             <label for="" class="control-label">Pedoman Penulisan Buku Monograf</label>
-                            <input type="file" class="form-control" name="pedoman_penulisan_buku_monograf">
-                            <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                            <input type="text" class="form-control" name="pedoman_penulisan_buku_monograf" value="{{ @$data->pedoman_penulisan_buku_monograf }}">
                          </div>
                      </div>
                      

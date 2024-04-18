@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Downloaded;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -29,6 +30,16 @@ class BerandaController extends Controller
     }
 
     public function download(){
-        return view('users.download.download');
+        $response = $this->_data();
+
+        return view('users.download.download', [
+            'response' => $response
+        ]);
+    }
+
+    private function _data(){
+        $data = Downloaded::where('id', 1)->first();
+
+        return $data;
     }
 }

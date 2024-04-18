@@ -88,41 +88,43 @@ class InformasiPenerbitanController extends Controller
         $check = PersyaratanIsbn::where('id', 1)->first();
         
 
-        if(array_key_exists('file_naskah', $request->all())){
+        // if(array_key_exists('file_naskah', $request->all())){
             
-            $file = $request['file_naskah'];
-            $nama_file = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'file_naskah_penerbitan';
-            $file->move($tujuan_upload,$nama_file);
-        }
+        //     $file = $request['file_naskah'];
+        //     $nama_file = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'file_naskah_penerbitan';
+        //     $file->move($tujuan_upload,$nama_file);
+        // }
 
-        if(array_key_exists('file_keaslian', $request->all())){
-            $file = $request['file_keaslian'];
-            $nama_file_keaslian = time()."_".$file->getClientOriginalName();
-            $tujuan_upload = 'file_keaslian';
-            $file->move($tujuan_upload,$nama_file_keaslian);
+        // if(array_key_exists('file_keaslian', $request->all())){
+        //     $file = $request['file_keaslian'];
+        //     $nama_file_keaslian = time()."_".$file->getClientOriginalName();
+        //     $tujuan_upload = 'file_keaslian';
+        //     $file->move($tujuan_upload,$nama_file_keaslian);
 
-        }
+        // }
 
 
         if($check){
 
             $check->update([
                 'konten' => $request->konten,
+                'file_naskah' => $request->file_naskah,
+                'file_keaslian' => $request->file_keaslian
             ]);
             
-            if(array_key_exists('file_naskah', $request->all())){
+            // if(array_key_exists('file_naskah', $request->all())){
                 
-                $check->update([
-                    'file_keaslian' => $nama_file_keaslian,
-                ]);
+            //     $check->update([
+            //         'file_keaslian' => $nama_file_keaslian,
+            //     ]);
 
-            }
-            if(array_key_exists('file_keaslian', $request->all())){
-                $check->update([
-                    'file_naskah' => $nama_file,
-                ]);
-            }
+            // }
+            // if(array_key_exists('file_keaslian', $request->all())){
+            //     $check->update([
+            //         'file_naskah' => $nama_file,
+            //     ]);
+            // }
 
             return back()->withSuccess("Berhasil Mengubah Informasi Persyaratan ISBN");
 
@@ -130,8 +132,8 @@ class InformasiPenerbitanController extends Controller
 
         PersyaratanIsbn::create([
             'konten' => $request->konten,
-            'file_keaslian' => $nama_file_keaslian,
-            'file_naskah' => $nama_file,
+            'file_naskah' => $request->file_naskah,
+            'file_keaslian' => $request->file_keaslian
         ]);
 
         return back()->withSuccess("Berhasil Menambahkan Informasi Persyaratan ISBN");

@@ -31,13 +31,11 @@
 
                      <div class="col-md-12 mt-3">
                         <label for="" class="control-label">File Naskah (UNESCO)</label>
-                        <input type="file" class="form-control" name="file_naskah">
-                        <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                        <input type="text" class="form-control" name="file_naskah" value="{{ @$persyaratanIsbn->file_naskah }}">
                      </div>
                      <div class="col-md-12 mt-3">
                         <label for="" class="control-label">Surat Keaslian Karya</label>
-                        <input type="file" class="form-control" name="file_keaslian">
-                        <small class="text-danger">Kosongkan jika tidak ingin diubah</small>
+                        <input type="text" class="form-control" name="file_keaslian" value="{{ @$persyaratanIsbn->file_keaslian }}">
                      </div>
                      
                      <div class="col-md-12 mt-3">
